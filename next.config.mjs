@@ -1,4 +1,3 @@
-import { headers } from './headers.mjs';
 import { withSentryConfig } from '@sentry/nextjs';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 import { nanoid } from 'nanoid';
@@ -54,8 +53,6 @@ const nextConfig = {
         dangerouslyAllowSVG: true,
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
-
-    headers,
 
     logging: {
         fetches: {
