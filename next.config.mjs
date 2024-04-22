@@ -15,7 +15,7 @@ jiti('./env/server');
 const nextConfig = {
     output: 'export',
 
-    basePath: '/',
+    basePath: '',
 
     reactStrictMode: true,
 
