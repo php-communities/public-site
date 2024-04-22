@@ -16,6 +16,8 @@ jiti('./env/server');
 const nextConfig = {
     output: 'export',
 
+    basePath: '/',
+
     reactStrictMode: true,
 
     poweredByHeader: false,
@@ -47,6 +49,7 @@ const nextConfig = {
     },
 
     images: {
+        unoptimized: true,
         disableStaticImages: true,
         dangerouslyAllowSVG: true,
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
