@@ -1,0 +1,8 @@
+node_modules
+next.config.mjs
+sentry.client.config.js
+sentry.server.config.js
+sentry.edge.config.js
+lint-staged.config.js
+lib/gen/**/*.ts
+!.storybook
