@@ -5,7 +5,7 @@
     "scripts": {
         "prepare": "node .husky/install.mjs",
         "build": "next build",
-        "dev": " next dev -p 3000",
+        "dev": "kill-port 3000 && next dev -p 3000",
         "prod": "next start",
         "check:ts": "tsc --project tsconfig.json --noEmit --pretty",
         "check:lint": "next lint",
