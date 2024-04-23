@@ -1,7 +1,7 @@
-import { Typography } from '@/_components/core/typography';
+import { Header } from '@/_components/shared/header';
 
 function HomeComponent() {
-    return <Typography variant="h1">hello world</Typography>;
+    return <Header />;
 }
 
 export default HomeComponent;
