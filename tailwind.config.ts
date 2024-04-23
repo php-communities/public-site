@@ -16,12 +16,14 @@ const config = {
             center: true,
             padding: '2rem',
             screens: {
-                '2xl': '1400px',
+                sm: '100%',
+                md: '640px',
+                '2xl': '1200px',
             },
         },
         extend: {
             fontFamily: {
-                sans: ['var(--font-inter)', ...fontFamily.sans],
+                inter: ['var(--font-inter)', ...fontFamily.sans],
             },
             colors: {
                 border: 'hsl(var(--border))',
@@ -57,6 +59,16 @@ const config = {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
                 },
+                black: 'var(--black)',
+                white: 'var(--white)',
+                blue: 'var(--blue)',
+                'blue-dark': 'var(--blue-dark)',
+                'blue-light': 'var(--blue-light)',
+                gray: 'var(--gray)',
+                'gray-dark': 'var(--gray-dark)',
+                link: 'var(--link)',
+                'bg-gray': 'var(--bg-gray)',
+                'bg-blue': 'var(--bg-blue)',
             },
             borderRadius: {
                 lg: 'var(--radius)',
@@ -76,6 +88,9 @@ const config = {
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
+            },
+            transitionDuration: {
+                DEFAULT: '300ms',
             },
         },
     },

@@ -60,6 +60,17 @@ a {
         --ring: 222.2 84% 4.9%;
 
         --radius: 0.5rem;
+
+        --black: #000;
+        --white: #fff;
+        --blue: #7bdff2;
+        --blue-dark: #1282a2;
+        --blue-light: #16bddf;
+        --gray: #a09cb0;
+        --gray-dark: #2d3142;
+        --link: #023e8a;
+        --bg-gray: #efefef;
+        --bg-blue: #ecfafd;
     }
 
     .dark {
