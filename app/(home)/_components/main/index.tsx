@@ -17,7 +17,7 @@ export function Main() {
                     </div>
                     <div className="flex w-1/2 items-end">
                         <Image
-                            className="object-cover"
+                            className="z-[1] object-cover"
                             src="/images/content/main-image.png"
                             alt="PHP-сообщества в России, Беларуси, Украине"
                             width="630"
