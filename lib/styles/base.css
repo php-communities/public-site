@@ -69,8 +69,8 @@ a {
         --gray: #a09cb0;
         --gray-dark: #2d3142;
         --link: #023e8a;
-        --bg-gray: #efefef;
-        --bg-blue: #ecfafd;
+        --gray-bg: #efefef;
+        --blue-bg: #ecfafd;
     }
 
     .dark {

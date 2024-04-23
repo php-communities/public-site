@@ -67,8 +67,8 @@ const config = {
                 gray: 'var(--gray)',
                 'gray-dark': 'var(--gray-dark)',
                 link: 'var(--link)',
-                'bg-gray': 'var(--bg-gray)',
-                'bg-blue': 'var(--bg-blue)',
+                'gray-bg': 'var(--gray-bg)',
+                'blue-bg': 'var(--blue-bg)',
             },
             borderRadius: {
                 lg: 'var(--radius)',

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Header() {
     return (
-        <header className="fixed left-0 top-0 w-full bg-blue">
+        <header className="fixed left-0 top-0 z-[100] w-full bg-blue">
             <div className="container mx-auto">
                 <div className="flex justify-end py-6">
                     <div className="flex space-x-8">
