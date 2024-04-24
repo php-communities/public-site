@@ -4,6 +4,8 @@ import { clsx } from 'clsx';
 import Link from 'next/link';
 import { useState } from 'react';
 
+import { Tabs } from '@/_components/core/tabs';
+import { TabsContent, TabsList, TabsTrigger } from '@/_components/core/tabs/tabs';
 import { EventFilters, Events as EventsItems, EventTabs } from '@/(home)/_components/events/mocks';
 import { Event } from '~/lib/types/events';
 
@@ -35,42 +37,59 @@ export function Events() {
                     Ближайшие онлайны и офлайны
                 </div>
 
-                <div className="mb-8 flex justify-center">
-                    {EventTabs.map((item, index) => (
-                        <button
-                            key={item.id}
-                            type="button"
-                            className={clsx(
-                                'w-[280px] border border-blue-dark p-3.5 font-inter text-sm font-bold transition hover:bg-blue-dark hover:text-white',
-                                tab === (item.type as string)
-                                    ? 'bg-blue-dark text-white'
-                                    : 'text-blue-dark',
-                                index === 0 ? 'rounded-l-[30px]' : 'rounded-r-[30px]'
-                            )}
-                            onClick={() => changeTab(item.type, filter)}
-                        >
-                            {item.title}
-                        </button>
-                    ))}
-                </div>
+                <Tabs defaultValue="soon">
+                    <TabsList className="mb-8 flex justify-center bg-transparent">
+                        {EventTabs.map((item, index) => (
+                            <TabsTrigger
+                                key={item.id}
+                                value={item.type}
+                                className={clsx(
+                                    'w-[280px]  border border-blue-dark p-3.5 font-inter text-sm font-bold text-blue-dark transition hover:bg-blue-dark hover:text-white data-[state=active]:bg-blue-dark data-[state=active]:text-white',
+                                    index === 0
+                                        ? 'rounded-l-[30px] rounded-r-none'
+                                        : 'rounded-l-none rounded-r-[30px]'
+                                )}
+                                onClick={() => changeTab(item.type, filter)}
+                            >
+                                {item.title}
+                            </TabsTrigger>
+                        ))}
+                    </TabsList>
 
-                <div className="mb-16 flex justify-center space-x-2.5">
-                    {EventFilters.map(item => (
-                        <button
-                            key={item.id}
-                            type="button"
-                            className={clsx(
-                                `rounded-[40px] border border-blue-light px-4 py-1.5 font-inter text-sm font-bold transition hover:bg-blue-light hover:text-white`,
-                                filter === (item.type as string)
-                                    ? `bg-blue-light text-white`
-                                    : `text-blue-light`
-                            )}
-                            onClick={() => changeTab(tab, item.type)}
-                        >
-                            {item.title}
-                        </button>
-                    ))}
-                </div>
+                    <TabsContent value="soon">
+                        <Tabs defaultValue="all">
+                            <TabsList className="mb-16 flex justify-center space-x-2.5 bg-transparent">
+                                {EventFilters.map(item => (
+                                    <TabsTrigger
+                                        key={item.id}
+                                        value={item.type}
+                                        className="rounded-[40px] border border-blue-light px-4 py-1.5 font-inter text-sm font-bold text-blue-light transition hover:bg-blue-light hover:text-white data-[state=active]:bg-blue-light data-[state=active]:text-white"
+                                        onClick={() => changeTab('soon', item.type)}
+                                    >
+                                        {item.title}
+                                    </TabsTrigger>
+                                ))}
+                            </TabsList>
+                        </Tabs>
+                    </TabsContent>
+
+                    <TabsContent value="passed">
+                        <Tabs defaultValue="all">
+                            <TabsList className="mb-16 flex justify-center space-x-2.5 bg-transparent">
+                                {EventFilters.map(item => (
+                                    <TabsTrigger
+                                        key={item.id}
+                                        value={item.type}
+                                        className="rounded-[40px] border border-blue-light px-4 py-1.5 font-inter text-sm font-bold text-blue-light transition hover:bg-blue-light hover:text-white data-[state=active]:bg-blue-light data-[state=active]:text-white"
+                                        onClick={() => changeTab('passed', item.type)}
+                                    >
+                                        {item.title}
+                                    </TabsTrigger>
+                                ))}
+                            </TabsList>
+                        </Tabs>
+                    </TabsContent>
+                </Tabs>
 
                 {items.length > 0 && (
                     <div className="grid grid-cols-3 gap-x-10 gap-y-20">
