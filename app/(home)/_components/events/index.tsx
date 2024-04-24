@@ -1,33 +1,26 @@
-'use client';
-
 import { clsx } from 'clsx';
-import Link from 'next/link';
-import { useState } from 'react';
 
-import { Tabs } from '@/_components/core/tabs';
-import { TabsContent, TabsList, TabsTrigger } from '@/_components/core/tabs/tabs';
-import { EventFilters, Events as EventsItems, EventTabs } from '@/(home)/_components/events/mocks';
-import { Event } from '~/lib/types/events';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/_components/core/tabs/tabs';
+import EventCards from '@/(home)/_components/events/cards';
+import { EventFilters, Events as EventItems, EventTabs } from '@/(home)/_components/events/mocks';
 
 export function Events() {
-    const [tab, setTab] = useState('soon');
-    const [filter, setFilter] = useState('all');
-    const [items, setItems] = useState(EventsItems.filter(item => (item.tab as string) === tab));
+    const soon = EventItems.filter(card => (card.tab as string) === 'soon');
+    const passed = EventItems.filter(card => (card.tab as string) === 'passed');
 
-    const changeTab = (tab: string, filter: string) => {
-        setTab(tab);
-        setFilter(filter);
-
-        if (filter === 'all') {
-            setItems(EventsItems.filter(item => (item.tab as string) === tab));
-            return;
-        }
-
-        setItems(
-            EventsItems.filter(
-                item => (item.tab as string) === tab && item.filters.includes(filter)
-            )
-        );
+    const cards = {
+        soon: {
+            all: soon,
+            translation: soon.filter(card => card.filters.includes('translation')),
+            online: soon.filter(card => card.filters.includes('online')),
+            offline: soon.filter(card => card.filters.includes('offline')),
+        },
+        passed: {
+            all: passed,
+            translation: passed.filter(card => card.filters.includes('translation')),
+            online: passed.filter(card => card.filters.includes('online')),
+            offline: passed.filter(card => card.filters.includes('offline')),
+        },
     };
 
     return (
@@ -49,7 +42,6 @@ export function Events() {
                                         ? 'rounded-l-[30px] rounded-r-none'
                                         : 'rounded-l-none rounded-r-[30px]'
                                 )}
-                                onClick={() => changeTab(item.type, filter)}
                             >
                                 {item.title}
                             </TabsTrigger>
@@ -64,12 +56,23 @@ export function Events() {
                                         key={item.id}
                                         value={item.type}
                                         className="rounded-[40px] border border-blue-light px-4 py-1.5 font-inter text-sm font-bold text-blue-light transition hover:bg-blue-light hover:text-white data-[state=active]:bg-blue-light data-[state=active]:text-white"
-                                        onClick={() => changeTab('soon', item.type)}
                                     >
                                         {item.title}
                                     </TabsTrigger>
                                 ))}
                             </TabsList>
+                            <TabsContent value="all">
+                                <EventCards cards={cards?.soon?.all} />
+                            </TabsContent>
+                            <TabsContent value="translation">
+                                <EventCards cards={cards?.soon?.translation} />
+                            </TabsContent>
+                            <TabsContent value="online">
+                                <EventCards cards={cards?.soon?.online} />
+                            </TabsContent>
+                            <TabsContent value="offline">
+                                <EventCards cards={cards?.soon?.offline} />
+                            </TabsContent>
                         </Tabs>
                     </TabsContent>
 
@@ -81,55 +84,26 @@ export function Events() {
                                         key={item.id}
                                         value={item.type}
                                         className="rounded-[40px] border border-blue-light px-4 py-1.5 font-inter text-sm font-bold text-blue-light transition hover:bg-blue-light hover:text-white data-[state=active]:bg-blue-light data-[state=active]:text-white"
-                                        onClick={() => changeTab('passed', item.type)}
                                     >
                                         {item.title}
                                     </TabsTrigger>
                                 ))}
                             </TabsList>
+                            <TabsContent value="all">
+                                <EventCards cards={cards?.passed?.all} />
+                            </TabsContent>
+                            <TabsContent value="translation">
+                                <EventCards cards={cards?.passed?.translation} />
+                            </TabsContent>
+                            <TabsContent value="online">
+                                <EventCards cards={cards?.passed?.online} />
+                            </TabsContent>
+                            <TabsContent value="offline">
+                                <EventCards cards={cards?.passed?.offline} />
+                            </TabsContent>
                         </Tabs>
                     </TabsContent>
                 </Tabs>
-
-                {items.length > 0 && (
-                    <div className="grid grid-cols-3 gap-x-10 gap-y-20">
-                        {items.map(({ id, date, title, text, link, filters }: Event) => (
-                            <Link
-                                key={id}
-                                href={link}
-                                className="bg-blue-bg p-5 shadow transition hover:shadow-lg"
-                            >
-                                <div className="mb-2.5 font-inter text-[13px] font-bold text-blue-light">
-                                    {date}
-                                </div>
-                                <div className="mb-2 font-inter text-2xl font-bold text-blue-dark">
-                                    {title}
-                                </div>
-                                <div className="mb-3.5 font-inter text-sm font-light">{text}</div>
-                                <div className="flex space-x-4">
-                                    {filters.map((filter: string, index) => (
-                                        <div
-                                            key={index}
-                                            className="font-inter text-[13px] font-bold uppercase text-blue-light"
-                                        >
-                                            {
-                                                EventFilters.find(
-                                                    item => (item.type as string) === filter
-                                                )?.title
-                                            }
-                                        </div>
-                                    ))}
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                )}
-
-                {items.length === 0 && (
-                    <div className="flex min-h-[378px] w-full items-center justify-center border border-gray">
-                        <div className="font-inter font-light text-gray">Ничего не найдено</div>
-                    </div>
-                )}
             </div>
         </div>
     );
