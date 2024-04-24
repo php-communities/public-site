@@ -3,7 +3,7 @@ import path from 'node:path';
 
 import matter from 'gray-matter';
 
-type Content<T> = {
+export type Content<T> = {
     slug: string;
     content: string;
     data: T;

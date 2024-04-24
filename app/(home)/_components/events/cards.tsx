@@ -2,9 +2,10 @@ import React from 'react';
 
 import EventCard from '@/(home)/_components/events/card';
 import { Event } from '~/lib/types/events';
+import { Content } from '~/lib/utils/read-content';
 
 type EventCardsProps = {
-    cards: Event[];
+    cards: Content<Event>[];
 };
 
 function EventCards({ cards }: EventCardsProps) {
@@ -12,16 +13,16 @@ function EventCards({ cards }: EventCardsProps) {
         <>
             {cards.length > 0 && (
                 <div className="grid grid-cols-3 gap-x-10 gap-y-20">
-                    {cards.map(({ id, date, title, text, link, tab, filters }: Event) => (
+                    {cards.map(({ slug, content, data }: Content<Event>) => (
                         <EventCard
-                            key={id}
-                            id={id}
-                            date={date}
-                            title={title}
-                            text={text}
-                            link={link}
-                            tab={tab}
-                            filters={filters}
+                            key={slug}
+                            slug={slug}
+                            date={data.date}
+                            title={data.title}
+                            text={content}
+                            link={data.link}
+                            tab={data.tab}
+                            filters={data.filters}
                         />
                     ))}
                 </div>

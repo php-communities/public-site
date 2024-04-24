@@ -1,11 +1,11 @@
 export type Event = {
-    id: string;
+    slug: string;
     date: string;
     title: string;
     text: string;
     link: string;
-    tab: EventTabType;
-    filters: EventFilterType[];
+    tab: string;
+    filters: string;
 };
 
 export enum EventTabType {
@@ -16,7 +16,7 @@ export enum EventTabType {
 export type EventTab = {
     id: string;
     title: string;
-    type: EventTabType;
+    type: EventTabType | EventFilterType;
 };
 
 export enum EventFilterType {
@@ -25,9 +25,3 @@ export enum EventFilterType {
     Online = 'online',
     Offline = 'offline',
 }
-
-export type EventFilter = {
-    id: string;
-    title: string;
-    type: EventFilterType;
-};

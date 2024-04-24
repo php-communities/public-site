@@ -2,24 +2,30 @@ import { clsx } from 'clsx';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/_components/core/tabs/tabs';
 import EventCards from '@/(home)/_components/events/cards';
-import { EventFilters, Events as EventItems, EventTabs } from '@/(home)/_components/events/mocks';
+import { EventFilters, EventTabs } from '@/(home)/_components/events/mocks';
+import { Event } from '~/lib/types/events';
+import { readContent } from '~/lib/utils/read-content';
 
 export function Events() {
-    const soon = EventItems.filter(card => (card.tab as string) === 'soon');
-    const passed = EventItems.filter(card => (card.tab as string) === 'passed');
+    const items = readContent<Event>('events').sort(
+        (a, b) => Number(new Date(b.data.date)) - Number(new Date(a.data.date))
+    );
+
+    const soon = items.filter(card => card.data.tab === 'soon');
+    const passed = items.filter(card => card.data.tab === 'passed');
 
     const cards = {
         soon: {
             all: soon,
-            translation: soon.filter(card => card.filters.includes('translation')),
-            online: soon.filter(card => card.filters.includes('online')),
-            offline: soon.filter(card => card.filters.includes('offline')),
+            translation: soon.filter(card => card.data.filters.includes('translation')),
+            online: soon.filter(card => card.data.filters.includes('online')),
+            offline: soon.filter(card => card.data.filters.includes('offline')),
         },
         passed: {
             all: passed,
-            translation: passed.filter(card => card.filters.includes('translation')),
-            online: passed.filter(card => card.filters.includes('online')),
-            offline: passed.filter(card => card.filters.includes('offline')),
+            translation: passed.filter(card => card.data.filters.includes('translation')),
+            online: passed.filter(card => card.data.filters.includes('online')),
+            offline: passed.filter(card => card.data.filters.includes('offline')),
         },
     };
 
