@@ -34,6 +34,7 @@
         "axios": "1.6.8",
         "class-variance-authority": "0.7.0",
         "clsx": "2.1.0",
+        "gray-matter": "4.0.3",
         "immer": "10.0.4",
         "isomorphic-dompurify": "2.7.0",
         "lucide-react": "0.372.0",
@@ -47,7 +48,7 @@
         "sharp": "0.33.3",
         "tailwind-merge": "2.3.0",
         "tailwindcss-animate": "1.0.7",
-        "zod": "3.23.0",
+        "zod": "3.23.4",
         "zustand": "4.5.2"
     },
     "devDependencies": {
@@ -65,8 +66,8 @@
         "@types/node": "20.12.7",
         "@types/react": "18.2.79",
         "@types/react-dom": "18.2.25",
-        "@typescript-eslint/eslint-plugin": "7.1.1",
-        "@typescript-eslint/parser": "7.1.1",
+        "@typescript-eslint/eslint-plugin": "7.7.1",
+        "@typescript-eslint/parser": "7.7.1",
         "@vitejs/plugin-react": "4.2.1",
         "@vitest/coverage-v8": "1.5.0",
         "autoprefixer": "10.4.19",
