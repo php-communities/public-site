@@ -24,6 +24,7 @@
         "cruiser": "depcruise app --include-only \"^app\" --config ./config/.dependency-cruiser.js --output-type dot | dot -T svg -Grankdir=TD | tee dependency-graph.svg | depcruise-wrap-stream-in-html > ./docs.html"
     },
     "dependencies": {
+        "@radix-ui/react-accordion": "1.1.2",
         "@radix-ui/react-dialog": "1.0.5",
         "@radix-ui/react-slot": "1.0.2",
         "@radix-ui/react-switch": "1.0.3",
