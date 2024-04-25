@@ -4,6 +4,7 @@ import { Cities } from '@/(home)/_components/cities';
 import { Communities } from '@/(home)/_components/communities';
 import { Events } from '@/(home)/_components/events';
 import { Main } from '@/(home)/_components/main';
+import { YourCity } from '@/(home)/_components/your-city';
 
 function HomeComponent() {
     return (
@@ -14,6 +15,7 @@ function HomeComponent() {
             <About />
             <Events />
             <Communities />
+            <YourCity />
         </>
     );
 }
