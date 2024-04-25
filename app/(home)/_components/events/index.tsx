@@ -15,12 +15,7 @@ export function Events() {
     const passed = items.filter(card => card.data.tab === 'passed');
 
     const cards = {
-        soon: {
-            all: soon,
-            translation: soon.filter(card => card.data.filters.includes('translation')),
-            online: soon.filter(card => card.data.filters.includes('online')),
-            offline: soon.filter(card => card.data.filters.includes('offline')),
-        },
+        soon: soon,
         passed: {
             all: passed,
             translation: passed.filter(card => card.data.filters.includes('translation')),
@@ -55,31 +50,7 @@ export function Events() {
                     </TabsList>
 
                     <TabsContent value="soon">
-                        <Tabs defaultValue="all">
-                            <TabsList className="mb-16 flex justify-center space-x-2.5 bg-transparent">
-                                {EventFilters.map(item => (
-                                    <TabsTrigger
-                                        key={item.id}
-                                        value={item.type}
-                                        className="rounded-[40px] border border-blue-light px-4 py-1.5 font-inter text-sm font-bold text-blue-light transition hover:bg-blue-light hover:text-white data-[state=active]:bg-blue-light data-[state=active]:text-white"
-                                    >
-                                        {item.title}
-                                    </TabsTrigger>
-                                ))}
-                            </TabsList>
-                            <TabsContent value="all">
-                                <EventCards cards={cards?.soon?.all} />
-                            </TabsContent>
-                            <TabsContent value="translation">
-                                <EventCards cards={cards?.soon?.translation} />
-                            </TabsContent>
-                            <TabsContent value="online">
-                                <EventCards cards={cards?.soon?.online} />
-                            </TabsContent>
-                            <TabsContent value="offline">
-                                <EventCards cards={cards?.soon?.offline} />
-                            </TabsContent>
-                        </Tabs>
+                        <EventCards cards={cards?.soon} />
                     </TabsContent>
 
                     <TabsContent value="passed">
