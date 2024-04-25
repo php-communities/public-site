@@ -1,3 +1,4 @@
+import { Footer } from '@/_components/shared/footer';
 import { Header } from '@/_components/shared/header';
 import { About } from '@/(home)/_components/about';
 import { Channels } from '@/(home)/_components/channels';
@@ -18,6 +19,7 @@ function HomeComponent() {
             <Communities />
             <YourCity />
             <Channels />
+            <Footer />
         </>
     );
 }
