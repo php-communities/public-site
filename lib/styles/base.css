@@ -108,4 +108,16 @@ a {
     #__next {
         @apply h-full;
     }
+
+    .md-content {
+        @apply font-light;
+
+        strong {
+            @apply font-bold;
+        }
+
+        a {
+            @apply font-bold text-link underline transition hover:opacity-70;
+        }
+    }
 }
