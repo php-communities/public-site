@@ -12,7 +12,7 @@ export type AboutCardProps = {
 function AboutCard({ title, link, text, imgSrc }: AboutCardProps) {
     return (
         <Link className="group flex flex-col bg-white" href={link}>
-            <div className="mb:h-[300px] h-[200px] bg-blue-bg">
+            <div className="h-[200px] bg-blue-bg md:h-[300px]">
                 <Image
                     className="size-full object-cover"
                     src={imgSrc}

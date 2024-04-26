@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function YourCity() {
     return (
-        <div className="mb-[45px] w-full md:mb-[90px] lg:mb-[180px]">
+        <div className="mb-[45px] w-full md:mb-[90px] lg:mb-[180px] lg:scroll-mt-[68px]" id="start">
             <div className="container mx-auto flex flex-col lg:flex-row">
                 <div className="flex w-full items-center justify-center lg:w-1/2">
                     <Image

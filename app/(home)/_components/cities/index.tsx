@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Cities() {
     return (
-        <div className="w-full">
+        <div className="w-full lg:scroll-mt-[68px]" id="city">
             <div className="container relative top-[-35px] mx-auto space-y-10 bg-white px-8 py-16 md:pl-14 lg:top-[-55px] lg:pl-28">
                 <div className="flex flex-col gap-x-5 md:flex-row">
                     <div className="flex h-[28px] w-[100px] items-center font-inter text-xs font-bold uppercase text-gray">

@@ -22,7 +22,7 @@ export function Channels() {
     const jobs = items.filter(card => card.data.category === 'jobs');
 
     return (
-        <div className="w-full pb-[45px] lg:pb-[90px]">
+        <div className="w-full pb-[45px] lg:scroll-mt-[68px] lg:pb-[90px]" id="chat">
             <div className="container mx-auto">
                 <div className="flex items-center justify-center">
                     <Image
