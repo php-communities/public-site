@@ -3,12 +3,12 @@ import Link from 'next/link';
 export function Cities() {
     return (
         <div className="w-full">
-            <div className="container relative top-[-55px] mx-auto space-y-10 bg-white py-16 pl-28 pr-8">
-                <div className="flex gap-x-5">
+            <div className="container relative top-[-35px] mx-auto space-y-10 bg-white px-8 py-16 md:pl-14 lg:top-[-55px] lg:pl-28">
+                <div className="flex flex-col gap-x-5 md:flex-row">
                     <div className="flex h-[28px] w-[100px] items-center font-inter text-xs font-bold uppercase text-gray">
                         БЕЛАРУСЬ
                     </div>
-                    <div className="grid w-full grid-cols-5 gap-x-3 gap-y-5">
+                    <div className="grid w-full grid-cols-1 gap-x-3 gap-y-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                         <Link
                             className="font-inter text-xl font-light text-gray-dark transition hover:text-blue-dark"
                             href="#mns"
@@ -18,11 +18,11 @@ export function Cities() {
                     </div>
                 </div>
 
-                <div className="flex gap-x-5">
+                <div className="flex flex-col gap-x-5 md:flex-row">
                     <div className="flex h-[28px] w-[100px] items-center font-inter text-xs font-bold uppercase text-gray">
                         РОССИЯ
                     </div>
-                    <div className="grid w-full grid-cols-5 gap-x-3 gap-y-5">
+                    <div className="grid w-full grid-cols-2 gap-x-3 gap-y-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                         <Link
                             className="font-inter text-xl font-light text-gray-dark transition hover:text-blue-dark"
                             href="#vrn"
@@ -170,11 +170,11 @@ export function Cities() {
                     </div>
                 </div>
 
-                <div className="flex gap-x-5">
+                <div className="flex flex-col gap-x-5 md:flex-row">
                     <div className="flex h-[28px] w-[100px] items-center font-inter text-xs font-bold uppercase text-gray">
                         УКРАИНА
                     </div>
-                    <div className="grid w-full grid-cols-5 gap-x-3 gap-y-5">
+                    <div className="grid w-full grid-cols-1 gap-x-3 gap-y-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                         <Link
                             className="font-inter text-xl font-light text-gray-dark transition hover:text-blue-dark"
                             href="#hrk"

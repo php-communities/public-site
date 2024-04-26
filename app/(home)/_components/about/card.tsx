@@ -12,7 +12,7 @@ export type AboutCardProps = {
 function AboutCard({ title, link, text, imgSrc }: AboutCardProps) {
     return (
         <Link className="group flex flex-col bg-white" href={link}>
-            <div className="h-[300px] bg-blue-bg">
+            <div className="mb:h-[300px] h-[200px] bg-blue-bg">
                 <Image
                     className="size-full object-cover"
                     src={imgSrc}
@@ -21,10 +21,14 @@ function AboutCard({ title, link, text, imgSrc }: AboutCardProps) {
                     alt={title}
                 />
             </div>
-            <div className="flex h-full flex-col items-start justify-between p-8">
+            <div className="flex h-full flex-col items-start justify-between p-4 md:p-8">
                 <div className="mb-8">
-                    <div className="mb-2 font-inter text-2xl font-bold text-black">{title}</div>
-                    <div className="font-inter text-xl font-light text-black">{text}</div>
+                    <div className="mb:text-2xl mb-2 font-inter text-xl font-bold text-black">
+                        {title}
+                    </div>
+                    <div className="mb:text-xl font-inter text-lg font-light text-black">
+                        {text}
+                    </div>
                 </div>
                 <button
                     type="button"

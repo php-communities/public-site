@@ -30,7 +30,7 @@ const AccordionTrigger = React.forwardRef<
             {...props}
         >
             {children}
-            <div className="flex size-[40px] items-center justify-center rounded-full transition group-hover:bg-blue group-data-[state=open]:rotate-45 group-data-[state=open]:bg-blue">
+            <div className="ml-3 flex size-[40px] shrink-0 items-center justify-center rounded-full transition group-hover:bg-blue group-data-[state=open]:rotate-45 group-data-[state=open]:bg-blue">
                 <Plus className="size-8 shrink-0 text-black transition group-hover:text-white group-data-[state=open]:text-white" />
             </div>
         </AccordionPrimitive.Trigger>

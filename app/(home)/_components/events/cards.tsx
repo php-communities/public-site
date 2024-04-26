@@ -12,7 +12,7 @@ function EventCards({ cards }: EventCardsProps) {
     return (
         <>
             {cards.length > 0 && (
-                <div className="grid grid-cols-3 gap-x-10 gap-y-20">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-20">
                     {cards.map(({ slug, content, data }: Content<Event>) => (
                         <EventCard
                             key={slug}

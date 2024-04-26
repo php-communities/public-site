@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export function YourCity() {
     return (
-        <div className="mb-[180px] w-full">
-            <div className="container mx-auto flex">
-                <div className="w-1/2">
+        <div className="mb-[45px] w-full md:mb-[90px] lg:mb-[180px]">
+            <div className="container mx-auto flex flex-col lg:flex-row">
+                <div className="flex w-full items-center justify-center lg:w-1/2">
                     <Image
                         src="/images/content/your-city.png"
                         alt="Запустить PHP-сообщество в своем городе"
@@ -13,12 +13,12 @@ export function YourCity() {
                         height={449}
                     />
                 </div>
-                <div className="w-1/2 bg-blue p-[60px]">
-                    <div className="text-[42px] font-bold leading-[1.23] text-white">
+                <div className="w-full bg-blue p-[20px] md:p-[40px] lg:w-1/2 lg:p-[60px]">
+                    <div className="text-[30px] font-bold leading-[1.23] text-white md:text-[35px] lg:text-[42px]">
                         Запустить PHP-сообщество в своем городе
                     </div>
                     <div className="my-[24px] h-[3px] w-[50px] bg-white opacity-60" />
-                    <div className="text-[20px] font-light leading-[1.55] text-white">
+                    <div className="text-[15px] font-light leading-[1.55] text-white md:text-[20px]">
                         В этой статье на Хабре{' '}
                         <Link
                             className="text-link underline underline-offset-4 transition hover:opacity-70"

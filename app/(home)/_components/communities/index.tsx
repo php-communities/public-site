@@ -6,12 +6,12 @@ export function Communities() {
         <div className="w-full ">
             <div className="relative bg-blue-bg">
                 <div className="container mx-auto flex">
-                    <div className="w-2/3 py-24">
-                        <div className="mb-[90px] font-inter text-[48px] font-bold text-blue">
+                    <div className="py-10 md:py-16 lg:w-2/3 lg:py-24">
+                        <div className="mb-[45px] font-inter text-[25px] font-bold text-blue md:text-[32px] lg:mb-[90px] lg:text-[48px]">
                             PHP-сообщество в Минске
                         </div>
-                        <div className="flex space-x-8">
-                            <div className="w-1/2">
+                        <div className="flex flex-col md:flex-row md:space-x-8">
+                            <div className="w-full md:w-1/2">
                                 <Image
                                     className="mb-[20px]"
                                     src="/images/svg/chat-bubbles.svg"
@@ -155,7 +155,7 @@ export function Communities() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/2">
+                            <div className="w-full md:w-1/2">
                                 <Image
                                     className="mb-[20px]"
                                     src="/images/svg/send-button.svg"
@@ -179,7 +179,7 @@ export function Communities() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute right-0 top-0 h-full w-[30%] bg-gray-bg">
+                <div className="bg-gray-bg lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-[30%]">
                     <Image
                         className="size-full object-cover"
                         src="/images/content/city1.webp"
@@ -189,7 +189,7 @@ export function Communities() {
                     />
                 </div>
             </div>
-            <div className="container py-[40px] text-center font-inter text-[40px] font-medium">
+            <div className="container py-[20px] text-center font-inter text-[30px] font-medium md:py-[30px] md:text-[40px] lg:py-[40px]">
                 ~
             </div>
         </div>

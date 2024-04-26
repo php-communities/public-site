@@ -26,8 +26,8 @@ export function Events() {
 
     return (
         <div className="w-full">
-            <div className="container mx-auto pb-32 pt-11">
-                <div className="mb-16 text-center font-inter text-[42px] font-bold text-blue">
+            <div className="container mx-auto pb-8 pt-11 md:pb-16 lg:pb-32">
+                <div className="mb-16 text-center font-inter text-[25px] font-bold text-blue md:text-[32px] lg:text-[42px]">
                     Ближайшие онлайны и офлайны
                 </div>
 
@@ -55,7 +55,7 @@ export function Events() {
 
                     <TabsContent value="passed">
                         <Tabs defaultValue="all">
-                            <TabsList className="mb-16 flex justify-center space-x-2.5 bg-transparent">
+                            <TabsList className="mb-8 flex h-auto flex-col justify-center space-y-2.5 bg-transparent md:flex-row md:space-x-2.5 lg:mb-16">
                                 {EventFilters.map(item => (
                                     <TabsTrigger
                                         key={item.id}

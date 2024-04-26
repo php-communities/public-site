@@ -13,7 +13,9 @@ function EventCard({ slug, date, title, text, link, filters }: Event) {
             <div className="mb-2.5 font-inter text-[13px] font-bold text-blue-light">
                 {dateToRuFormat(date)}
             </div>
-            <div className="mb-2 font-inter text-2xl font-bold text-blue-dark">{title}</div>
+            <div className="mg:text-2xl mb-2 font-inter text-xl font-bold text-blue-dark">
+                {title}
+            </div>
             <div className="mb-3.5 font-inter text-sm font-light">{text}</div>
             <div className="flex space-x-4">
                 {filters.split(',').map((filter: string) => (
