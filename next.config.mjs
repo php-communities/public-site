@@ -60,6 +60,39 @@ const nextConfig = {
         },
     },
 
+    rewrites() {
+        return [
+            {
+                source: '/2023-php',
+                destination: '/html/2023-php.html',
+            },
+            {
+                source: '/2022-php',
+                destination: '/html/2022-php.html',
+            },
+            {
+                source: '/2021-php',
+                destination: '/html/2021-php.html',
+            },
+            {
+                source: '/refactoring',
+                destination: '/html/refactoring.html',
+            },
+            {
+                source: '/never-forget-2020',
+                destination: '/html/never-forget-2020.html',
+            },
+            {
+                source: '/php-8-1',
+                destination: '/html/php-8-1.html',
+            },
+            {
+                source: '/meetup',
+                destination: '/html/meetup.html',
+            }
+        ]
+    },
+
     sentry: {
         hideSourceMaps: true,
     },
