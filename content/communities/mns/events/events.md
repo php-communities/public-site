@@ -1,6 +1,6 @@
 ---
 title: PHP-сообщество в Минске
-imgSrc: /images/content/city1.webp
+imgSrc: /images/content/communities/mns.webp
 ---
 
 **2023**<br><br>

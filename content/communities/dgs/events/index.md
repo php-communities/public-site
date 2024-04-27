@@ -1,6 +1,6 @@
 ---
 title: PHP-сообщество в Дагестане
-imgSrc: /images/content/city3.png
+imgSrc: /images/content/communities/dgs.jpg
 ---
 
 **2021**<br><br>

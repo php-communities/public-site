@@ -10,7 +10,34 @@ type EventItem = {
     imgSrc: string;
 };
 
-const places = ['mns', 'dgs', 'vrn'];
+const places = [
+    'mns',
+    'dgs',
+    'vrn',
+    'ekb',
+    'ivn',
+    'irk',
+    'izh',
+    'yola',
+    'kzn',
+    'kld',
+    'krd',
+    'krk',
+    'lip',
+    'msk',
+    'nn',
+    'nsk',
+    'rnd',
+    'smr',
+    'spb',
+    'srt',
+    'tyum',
+    'tms',
+    'ulk',
+    'ufa',
+    'yrs',
+    'hrk',
+];
 
 export function Communities() {
     return (

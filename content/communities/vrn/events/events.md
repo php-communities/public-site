@@ -1,6 +1,6 @@
 ---
 title: PHP-сообщество в Воронеже
-imgSrc: /images/content/city2.jpg
+imgSrc: /images/content/communities/vrn.png
 ---
 
 **2023**<br><br>

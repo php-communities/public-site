@@ -4,4 +4,4 @@ title: PHP jobs
 link: https://t.me/phpdevjob
 ---
 
-Вакансии по PHP, Symfony, Laravel. Коротко и по делу: должность, локация, компания и зарплата 
+Вакансии по PHP, Symfony, Laravel. Коротко и по делу: должность, локация, компания и зарплата
