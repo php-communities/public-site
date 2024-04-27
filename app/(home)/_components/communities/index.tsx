@@ -41,20 +41,24 @@ const places = [
 
 export function Communities() {
     return (
-        <div className="w-full scroll-mt-[68px]">
+        <div className="w-full">
             {places.map(place => {
                 const chats = readContent<ChatItem>(`communities/${place}/chats`)?.[0];
                 const events = readContent<EventItem>(`communities/${place}/events`)?.[0];
                 return (
                     <>
-                        <div key={place} className="relative bg-blue-bg" id={place}>
+                        <div
+                            key={place}
+                            className="relative scroll-mt-[68px] bg-blue-bg"
+                            id={place}
+                        >
                             <div className="container mx-auto flex">
                                 <div className="py-10 md:py-16 lg:w-2/3 lg:py-24">
                                     <div className="mb-[45px] font-inter text-[25px] font-bold text-blue md:text-[32px] lg:mb-[90px] lg:text-[48px]">
                                         {events?.data.title}
                                     </div>
                                     <div className="flex flex-col md:flex-row md:space-x-8">
-                                        <div className="w-full md:w-1/2">
+                                        <div className="mb-[32px] w-full md:mb-0 md:w-1/2">
                                             <Image
                                                 className="mb-[20px]"
                                                 src="/images/svg/chat-bubbles.svg"
@@ -94,7 +98,7 @@ export function Communities() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-gray-bg lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-[30%]">
+                            <div className="h-[300px] bg-gray-bg md:h-[400px] lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-[30%]">
                                 <Image
                                     className="size-full object-cover"
                                     src={events?.data.imgSrc ?? ''}
