@@ -10,16 +10,12 @@ import ChannelsCard, { ChannelsProps } from '@/(home)/_components/channels/card'
 import { readContent } from '~/lib/utils/read-content';
 
 export function Channels() {
-    const items = readContent<ChannelsProps>('channels').sort(
-        (a, b) => Number(new Date(b.data.title)) - Number(new Date(a.data.title))
-    );
-
-    const news = items.filter(card => card.data.category === 'news');
-    const frameworks = items.filter(card => card.data.category === 'frameworks');
-    const chats = items.filter(card => card.data.category === 'chats');
-    const podcasts = items.filter(card => card.data.category === 'podcasts');
-    const youtube = items.filter(card => card.data.category === 'youtube');
-    const jobs = items.filter(card => card.data.category === 'jobs');
+    const news = readContent<ChannelsProps>('channels/news');
+    const frameworks = readContent<ChannelsProps>('channels/frameworks');
+    const chats = readContent<ChannelsProps>('channels/chats');
+    const podcasts = readContent<ChannelsProps>('channels/podcasts');
+    const youtube = readContent<ChannelsProps>('channels/youtube');
+    const jobs = readContent<ChannelsProps>('channels/jobs');
 
     return (
         <div className="w-full pb-[45px] lg:scroll-mt-[68px] lg:pb-[90px]" id="chat">
