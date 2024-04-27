@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>https://phpcommunity.ru/2023-php</loc>
+		<lastmod>2024-02-03T07:52:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/</loc>
+		<lastmod>2024-02-19T12:03:24+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/2022-php</loc>
+		<lastmod>2023-02-17T18:28:45+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/2021-php</loc>
+		<lastmod>2024-02-02T18:39:05+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/refactoring</loc>
+		<lastmod>2021-03-07T16:20:08+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/never-forget-2020</loc>
+		<lastmod>2021-05-31T19:37:27+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/php-8-1</loc>
+		<lastmod>2021-11-24T20:56:44+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://phpcommunity.ru/meetup</loc>
+		<lastmod>2023-12-23T08:35:50+00:00</lastmod>
+	</url>
+</urlset>
