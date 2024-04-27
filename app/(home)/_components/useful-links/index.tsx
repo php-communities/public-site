@@ -1,9 +1,9 @@
 import { readContent } from '~/lib/utils/read-content';
 
-import AboutCard, { AboutCardProps } from './card';
+import UsefulLinksCard, { UsefulLinksProps } from './card';
 
-export function About() {
-    const cards = readContent<AboutCardProps>('useful-links');
+export function UsefulLinks() {
+    const cards = readContent<UsefulLinksProps>('useful-links');
 
     return (
         <div className="w-full bg-gray-bg">
@@ -14,7 +14,7 @@ export function About() {
 
                 <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
                     {cards.map(card => (
-                        <AboutCard
+                        <UsefulLinksCard
                             key={card.slug}
                             title={card.data.title}
                             link={card.data.link}

@@ -89,8 +89,8 @@ const nextConfig = {
             {
                 source: '/meetup',
                 destination: '/html/meetup.html',
-            }
-        ]
+            },
+        ];
     },
 
     sentry: {

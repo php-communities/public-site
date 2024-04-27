@@ -2,14 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-export type AboutCardProps = {
+export type UsefulLinksProps = {
     title: string;
     text: string;
     imgSrc: string;
     link: string;
 };
 
-function AboutCard({ title, link, text, imgSrc }: AboutCardProps) {
+function UsefulLinksCard({ title, link, text, imgSrc }: UsefulLinksProps) {
     return (
         <Link className="group flex flex-col bg-white" href={link}>
             <div className="h-[200px] bg-blue-bg md:h-[300px]">
@@ -41,4 +41,4 @@ function AboutCard({ title, link, text, imgSrc }: AboutCardProps) {
     );
 }
 
-export default AboutCard;
+export default UsefulLinksCard;
