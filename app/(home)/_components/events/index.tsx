@@ -7,12 +7,13 @@ import { Event } from '~/lib/types/events';
 import { readContent } from '~/lib/utils/read-content';
 
 export function Events() {
-    const items = readContent<Event>('events').sort(
+    const soon = readContent<Event>('events/soon').sort(
         (a, b) => Number(new Date(b.data.date)) - Number(new Date(a.data.date))
     );
 
-    const soon = items.filter(card => card.data.tab === 'soon');
-    const passed = items.filter(card => card.data.tab === 'passed');
+    const passed = readContent<Event>('events/passed').sort(
+        (a, b) => Number(new Date(b.data.date)) - Number(new Date(a.data.date))
+    );
 
     const cards = {
         soon: soon,
@@ -55,7 +56,7 @@ export function Events() {
 
                     <TabsContent value="passed">
                         <Tabs defaultValue="all">
-                            <TabsList className="mb-8 flex h-auto flex-col justify-center space-y-2.5 bg-transparent md:flex-row md:space-x-2.5 lg:mb-16">
+                            <TabsList className="mb-8 flex h-auto flex-col justify-center space-y-2.5 bg-transparent md:flex-row md:space-x-2.5 md:space-y-0 lg:mb-16">
                                 {EventFilters.map(item => (
                                     <TabsTrigger
                                         key={item.id}

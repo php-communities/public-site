@@ -1,9 +1,8 @@
 ---
-date: '2022-11-24'
-title: 'PHP Russia 2022'
+date: 2022-11-24
+title: PHP Russia 2022
 link: https://phprussia.ru/moscow/2022
-tab: 'passed'
-filters: 'online,offline'
+filters: online,offline
 ---
 
 Крупнейшая конференция по PHP в России 24 и 25 ноября в офлайне в Москве + трансляция.
