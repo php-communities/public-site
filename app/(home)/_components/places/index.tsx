@@ -1,7 +1,7 @@
 import { Content, readContent } from '~/lib/utils/read-content';
 import Country from '@/(home)/_components/places/country';
 
-type CityItem = {
+export type CityItem = {
     name: string;
     title: string;
     imgSrc: string;
