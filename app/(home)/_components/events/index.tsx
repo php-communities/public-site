@@ -4,16 +4,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/_components/core/tab
 import EventCards from '@/(home)/_components/events/cards';
 import { EventFilters, EventTabs } from '@/(home)/_components/events/mocks';
 import { Event } from '~/lib/types/events';
-import { readContent } from '~/lib/utils/read-content';
+import { Content, readContent } from '~/lib/utils/read-content';
+
+const byDate = (a: Content<Event>, b: Content<Event>) => {
+    return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
+};
+
+const byDateDesc = (a: Content<Event>, b: Content<Event>) => {
+    return Number(new Date(a.data.date)) - Number(new Date(b.data.date));
+};
 
 export function Events() {
-    const soon = readContent<Event>('events/soon').sort(
-        (a, b) => Number(new Date(b.data.date)) - Number(new Date(a.data.date))
-    );
-
-    const passed = readContent<Event>('events/passed').sort(
-        (a, b) => Number(new Date(b.data.date)) - Number(new Date(a.data.date))
-    );
+    const all = readContent<Event>('events');
+    const soon = all.filter(item => new Date(item.data.date) > new Date()).sort(byDateDesc);
+    const passed = all.filter(item => new Date(item.data.date) <= new Date()).sort(byDate);
 
     const cards = {
         soon: soon,

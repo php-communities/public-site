@@ -1,5 +1,5 @@
-import { Content, readContent } from '~/lib/utils/read-content';
 import Country from '@/(home)/_components/places/country';
+import { Content, readContent } from '~/lib/utils/read-content';
 
 export type CityItem = {
     name: string;
