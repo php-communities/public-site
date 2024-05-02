@@ -2,16 +2,19 @@ import Image from 'next/image';
 import React from 'react';
 import MarkdownView from 'react-showdown';
 
+import EventItem from '@/(home)/_components/events/item';
 import { CityItem } from '@/(home)/_components/places';
+import { Event } from '~/lib/types/events';
 import { Content, readContent } from '~/lib/utils/read-content';
 
-type EventItem = {
-    title: string;
-    imgSrc: string;
+const byDate = (a: Content<Event>, b: Content<Event>) => {
+    return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
 };
 
 function CommunityCard(city: Content<CityItem>) {
-    const events = readContent<EventItem>(`communities/${city.slug}/events`)?.[0];
+    const events = readContent<Event>(`events`)
+        .filter(event => event.data.city === city.slug)
+        .sort(byDate);
 
     return (
         <>
@@ -34,11 +37,15 @@ function CommunityCard(city: Content<CityItem>) {
                                     Прошедшие мероприятия
                                 </div>
 
-                                <MarkdownView
-                                    markdown={events?.content ?? ''}
-                                    options={{ tables: true, emoji: true }}
-                                    className="md-content"
-                                />
+                                {events.map(event => (
+                                    <EventItem
+                                        key={event.slug}
+                                        date={event.data.date}
+                                        title={event.data.title}
+                                        text={event.content}
+                                        link={event.data.link}
+                                    />
+                                ))}
                             </div>
 
                             <div className="w-full md:w-1/2">

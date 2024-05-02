@@ -1,0 +1,9 @@
+---
+date: 2021-05-20
+title: 'PHP of BY Meetup #36'
+link:
+filters: offline,translation
+city: mns
+---
+
+<a href="https://youtu.be/9yN20e0U4Ww" class="text-link underline hover:opacity-70 transition">AppSec Manifesto</a> и <a href="https://youtu.be/UdHB-PCf8K4" class="text-link underline hover:opacity-70 transition">Wordpress</a>.

@@ -6,6 +6,7 @@ export type Event = {
     link: string;
     tab: string;
     filters: string;
+    city: string;
 };
 
 export enum EventTabType {

@@ -1,0 +1,9 @@
+---
+date: 2021-07-29
+title: 'PHP of BY Meetup #37'
+link: https://youtu.be/cUBpUDy_7ZE
+filters: offline,translation
+city: mns
+---
+
+Cloud сертификации & Kong - API Gateway7.

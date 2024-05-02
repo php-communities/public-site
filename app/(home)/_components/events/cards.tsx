@@ -23,6 +23,7 @@ function EventCards({ cards }: EventCardsProps) {
                             link={data.link}
                             tab={data.tab}
                             filters={data.filters}
+                            city={data.city}
                         />
                     ))}
                 </div>

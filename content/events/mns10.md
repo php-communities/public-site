@@ -1,0 +1,9 @@
+---
+date: 2020-04-25
+title: 'PHP-meetup #33'
+link: https://www.youtube.com/watch?v=BZlbW99ghYk
+filters: offline,translation
+city: mns
+---
+
+Про код-ревью, PHP для игр, рефакторинг, Drupal и как переписать проект.
