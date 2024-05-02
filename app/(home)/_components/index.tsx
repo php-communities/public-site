@@ -1,7 +1,7 @@
 import { Footer } from '@/_components/shared/footer';
 import { Header } from '@/_components/shared/header';
 import { Channels } from '@/(home)/_components/channels';
-import { Cities } from '@/(home)/_components/cities';
+import { Places } from '@/(home)/_components/places';
 import { Communities } from '@/(home)/_components/communities';
 import { Events } from '@/(home)/_components/events';
 import { Main } from '@/(home)/_components/main';
@@ -13,7 +13,7 @@ function HomeComponent() {
         <>
             <Header />
             <Main />
-            <Cities />
+            <Places />
             <UsefulLinks />
             <Events />
             <Communities />
