@@ -1,0 +1,9 @@
+---
+date: 2019-12-21
+title: 'митап чата #2'
+link: https://youtu.be/tJvLJ_G2PEc
+filters: offline,translation
+city: nn
+---
+
+Про смену фреймов на ходу разработки, PHP-демонизатор и путь из фулстека в тимлиды.

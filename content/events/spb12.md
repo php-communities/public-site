@@ -1,0 +1,7 @@
+---
+date: 2019-11-29
+title: BeerPHP
+link: https://t.me/beerphp_spb
+filters: offline,translation
+city: spb
+---

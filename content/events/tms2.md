@@ -1,0 +1,9 @@
+---
+date: 2020-10-16
+title: 'митап чата #1'
+link: https://youtu.be/bOgMpRYxu5w
+filters: offline,translation
+city: tms
+---
+
+C докладами про PHP в энтерпрайз-приложениях.

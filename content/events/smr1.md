@@ -1,0 +1,9 @@
+---
+date: 2022-04-02
+title: 'митап чата #3'
+link: https://www.youtube.com/playlist?list=PLY-xvrnQ8xzDM8MX2XYIq5EB_bGkd5BGJ
+filters: offline,translation
+city: smr
+---
+
+Про 3+ лайфхака Clickhouse и сказ, как БД время хранят.

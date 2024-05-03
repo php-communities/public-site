@@ -1,0 +1,9 @@
+---
+date: 2019-11-30
+title: митап с Кириллом Несмеяновым
+link: https://www.youtube.com/watch?v=XUkRzUNVrIk
+filters: offline,translation
+city: ivn
+---
+
+Доклад про неправильный путь PHP.

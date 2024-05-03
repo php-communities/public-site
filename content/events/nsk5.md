@@ -1,0 +1,7 @@
+---
+date: 2020-03-06
+title: BeerPHP
+link: https://t.me/beerphp_nsk/392
+filters: offline,translation
+city: nsk
+---

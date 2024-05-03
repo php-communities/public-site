@@ -1,0 +1,7 @@
+---
+date: 2019-12-20
+title: BeerPHP
+link: https://github.com/in100gramm/events/blob/master/events/2019/12/2019.12.20.md
+filters: offline,translation
+city: spb
+---

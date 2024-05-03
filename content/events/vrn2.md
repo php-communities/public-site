@@ -1,0 +1,9 @@
+---
+date: 2022-08-26
+title: 'митап чата #4'
+link: https://phpvrn.github.io/2022/08/26/community-meetup-iv.html
+filters: offline,translation
+city: vrn
+---
+
+Про прокрастинацию, Open Source, релизы, MVP и перфекционизм.

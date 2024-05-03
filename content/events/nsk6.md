@@ -1,0 +1,7 @@
+---
+date: 2019-11-18
+title: BeerPHP
+link: https://t.me/beerphp_nsk
+filters: offline,translation
+city: nsk
+---

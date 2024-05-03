@@ -1,0 +1,9 @@
+---
+date: 2019-10-19
+title: 'PHP-митап от Panda, Skyeng и ZeBrains'
+link: https://www.youtube.com/watch?v=yGGfOFkdSs0&feature=youtu.be
+filters: offline,translation
+city: ulk
+---
+
+Про асинхронность, трассировку и логгирование в микросервисах и БД.

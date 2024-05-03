@@ -37,15 +37,20 @@ function CommunityCard(city: Content<CityItem>) {
                                     Прошедшие мероприятия
                                 </div>
 
-                                {events.map(event => (
-                                    <EventItem
-                                        key={event.slug}
-                                        date={event.data.date}
-                                        title={event.data.title}
-                                        text={event.content}
-                                        link={event.data.link}
-                                    />
-                                ))}
+                                {events.length > 0 &&
+                                    events.map(event => (
+                                        <EventItem
+                                            key={event.slug}
+                                            date={event.data.date}
+                                            title={event.data.title}
+                                            text={event.content}
+                                            link={event.data.link}
+                                        />
+                                    ))}
+
+                                {events.length === 0 && (
+                                    <div className="font-light">Все впереди :)</div>
+                                )}
                             </div>
 
                             <div className="w-full md:w-1/2">

@@ -1,0 +1,9 @@
+---
+date: 2020-02-17
+title: 'митап чата #1'
+link: https://t.me/php_vrn/439
+filters: offline,translation
+city: vrn
+---
+
+(без записи).
