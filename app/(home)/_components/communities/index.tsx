@@ -1,21 +1,12 @@
-import { Content, readContent } from '~/lib/utils/read-content';
-import { CityItem } from '@/(home)/_components/places';
 import CommunityCard from '@/(home)/_components/communities/card';
-
-const byAlphabet = (a: Content<CityItem>, b: Content<CityItem>) => {
-    if (a.data.name.toLowerCase() < b.data.name.toLowerCase()) {
-        return -1;
-    }
-    if (a.data.name.toLowerCase() > b.data.name.toLowerCase()) {
-        return 1;
-    }
-    return 0;
-};
+import { CityItem } from '@/(home)/_components/places';
+import { sortByAlphabet } from '~/lib/utils/helpers';
+import { readContent } from '~/lib/utils/read-content';
 
 export function Communities() {
-    const belarus = readContent<CityItem>(`communities/belarus`).sort(byAlphabet);
-    const russia = readContent<CityItem>(`communities/russia`).sort(byAlphabet);
-    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(byAlphabet);
+    const belarus = readContent<CityItem>(`communities/belarus`).sort(sortByAlphabet);
+    const russia = readContent<CityItem>(`communities/russia`).sort(sortByAlphabet);
+    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(sortByAlphabet);
 
     return (
         <div className="w-full">

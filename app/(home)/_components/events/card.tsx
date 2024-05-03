@@ -3,9 +3,7 @@ import React from 'react';
 
 import { EventFilters } from '@/(home)/_components/events/mocks';
 import { Event } from '~/lib/types/events';
-
-const dateToRuFormat = (iso: string) =>
-    new Intl.DateTimeFormat('ru-RU', { dateStyle: 'long' }).format(new Date(iso));
+import { dateToRuFormat } from '~/lib/utils/helpers';
 
 function EventCard({ slug, date, title, text, link, filters }: Event) {
     if (link) {

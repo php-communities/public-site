@@ -5,16 +5,13 @@ import MarkdownView from 'react-showdown';
 import EventItem from '@/(home)/_components/events/item';
 import { CityItem } from '@/(home)/_components/places';
 import { Event } from '~/lib/types/events';
+import { sortByDate } from '~/lib/utils/helpers';
 import { Content, readContent } from '~/lib/utils/read-content';
-
-const byDate = (a: Content<Event>, b: Content<Event>) => {
-    return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
-};
 
 function CommunityCard(city: Content<CityItem>) {
     const events = readContent<Event>(`events`)
         .filter(event => event.data.city === city.slug)
-        .sort(byDate);
+        .sort(sortByDate);
 
     return (
         <>

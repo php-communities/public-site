@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const dateFormat = (iso: string) =>
-    new Intl.DateTimeFormat('ru-RU', { dateStyle: 'short' }).format(new Date(iso));
+import { dateFormat } from '~/lib/utils/helpers';
 
 type EventItemProps = {
     date: string;

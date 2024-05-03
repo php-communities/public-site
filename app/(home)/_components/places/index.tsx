@@ -1,4 +1,5 @@
 import Country from '@/(home)/_components/places/country';
+import { sortByAlphabet } from '~/lib/utils/helpers';
 import { Content, readContent } from '~/lib/utils/read-content';
 
 export type CityItem = {
@@ -12,20 +13,10 @@ export type CountryProps = {
     cities: Content<CityItem>[];
 };
 
-const byAlphabet = (a: Content<CityItem>, b: Content<CityItem>) => {
-    if (a.data.name.toLowerCase() < b.data.name.toLowerCase()) {
-        return -1;
-    }
-    if (a.data.name.toLowerCase() > b.data.name.toLowerCase()) {
-        return 1;
-    }
-    return 0;
-};
-
 export function Places() {
-    const belarus = readContent<CityItem>(`communities/belarus`).sort(byAlphabet);
-    const russia = readContent<CityItem>(`communities/russia`).sort(byAlphabet);
-    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(byAlphabet);
+    const belarus = readContent<CityItem>(`communities/belarus`).sort(sortByAlphabet);
+    const russia = readContent<CityItem>(`communities/russia`).sort(sortByAlphabet);
+    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(sortByAlphabet);
 
     return (
         <div className="w-full lg:scroll-mt-[68px]" id="city">
