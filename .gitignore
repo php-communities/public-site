@@ -4,6 +4,7 @@
 .idea/
 .vscode/
 dist/
+.env
 .env.local
 .eslintcache
 storybook-static
