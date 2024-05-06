@@ -16,7 +16,15 @@ export function Footer() {
                     <GithubIcon className="fill-white transition hover:fill-black" />
                 </Link>
                 <div className="text-center font-light text-white">
-                    Сайт поддерживается через open source и ребятами из Вебпрактик.
+                    Сайт поддерживается php сообществом в{' '}
+                    <a href="https://github.com/php-communities/public-site" target="_blank">
+                        open source
+                    </a>{' '}
+                    и ребятами из{' '}
+                    <a href="https://webpractik.ru" target="_blank">
+                        Вебпрактик
+                    </a>
+                    .
                 </div>
             </div>
         </header>
