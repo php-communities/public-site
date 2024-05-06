@@ -2,8 +2,10 @@
 
 ![site cover](https://github.com/php-communities/public-site/blob/master/public/images/content/main-image.png?raw=true)
 
-Сайт сделал через nextjs. Опубликован на vercel.
-Управляется *.md файлами. Контрибьтится через open source.
+- Сайт сделал через nextjs. 
+- Опубликован на vercel.
+- Управляется *.md файлами.
+- Контрибьтится через open source.
 
 ## Как добавить свое сообщество
 Смотри по примеру /content/communities
