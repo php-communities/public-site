@@ -1,6 +1,6 @@
 # Публичный сайт phpcommunity.ru
 
-~[site cover](./public/images/content/main-image.png)
+![site cover](https://github.com/php-communities/public-site/blob/master/public/images/content/main-image.png?raw=true)
 
 Сайт сделал через nextjs. Опубликован на vercel.
 Управляется *.md файлами. Контрибьтится через open source.
