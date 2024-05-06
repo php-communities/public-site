@@ -1,7 +1,0 @@
----
-date: 2019-12-25
-title: BeerPHP
-link: https://www.meetup.com/ru-RU/BeerPHP-Moscow/events/267315067/
-filters: offline,translation
-city: msk
----

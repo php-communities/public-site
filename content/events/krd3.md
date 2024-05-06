@@ -1,9 +1,0 @@
----
-date: 2021-09-25
-title: PHP Backend
-link: https://meetup.zebrains.ru/php
-filters: offline,translation
-city: krd
----
-
-5 докладов про повышение стабильности кода.

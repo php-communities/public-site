@@ -1,9 +1,0 @@
----
-date: 2020-11-07
-title: 'митап чата #1'
-link: https://youtu.be/Uezd5ocJQ9I
-filters: offline,translation
-city: krd
----
-
-Про автотесты, реляционные БД и борьбу с легаси.

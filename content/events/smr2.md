@@ -1,9 +1,0 @@
----
-date: 2021-11-06
-title: 'PHP Самара Beer #1'
-link:
-filters: offline,translation
-city: smr
----
-
-Запись не велась, основная цель лучше познакомиться.

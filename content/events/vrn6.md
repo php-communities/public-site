@@ -1,9 +1,0 @@
----
-date: 2021-07-30
-title: 'митап «Оформление приложения: как провести Code review и опубликовать в composer»'
-link: https://phpvrn.github.io/2021/08/01/efko-package-refuctor.html
-filters: offline,translation
-city: vrn
----
-
-(без записи).

@@ -1,7 +1,0 @@
----
-date: 2021-04-09
-title: BeerPHP
-link: https://t.me/beerphp_nsk/1368
-filters: offline,translation
-city: nsk
----

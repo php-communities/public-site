@@ -1,9 +1,0 @@
----
-date: 2019-10-20
-title: 'ThinkPHP #19'
-link: https://www.youtube.com/watch?v=wN9MxAHQZSI
-filters: offline,translation
-city: hrk
----
-
-Про Data Pipelines и грабли в проектах.

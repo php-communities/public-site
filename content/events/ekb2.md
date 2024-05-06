@@ -1,9 +1,0 @@
----
-date: 2020-03-26
-title: 'митап чата #3'
-link: https://scienceman.timepad.ru/event/1263936/
-filters: offline,translation
-city: ekb
----
-
-Про код-ревью и уязвимости сайтов.

@@ -1,9 +1,0 @@
----
-date: 2021-09-18
-title: 'митап чата #2'
-link: https://youtube.com/playlist?list=PLY-xvrnQ8xzCoSz07a8bTCigNF1_U-E7a
-filters: offline,translation
-city: smr
----
-
-Про рефакторинг, жизнь без тимлидов и не только.

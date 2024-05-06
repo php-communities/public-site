@@ -1,9 +1,0 @@
----
-date: 2020-02-29
-title: 'митап чата #2'
-link: https://www.youtube.com/watch?v=2TBrGX1-mJY
-filters: offline,translation
-city: rnd
----
-
-Про DTO, ReactPHP, Unit-тесты и переезд с PHP на Golang.

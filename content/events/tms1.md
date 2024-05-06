@@ -1,9 +1,0 @@
----
-date: 2020-10-29
-title: 'митап чата #2'
-link: https://youtu.be/MuVMe7oMoyM
-filters: offline,translation
-city: tms
----
-
-Про Yii, выбор фреймворка для энтерпрайз, Cycle ORM и графы.

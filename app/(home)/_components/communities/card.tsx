@@ -9,9 +9,11 @@ import { sortByDate } from '~/lib/utils/helpers';
 import { Content, readContent } from '~/lib/utils/read-content';
 
 function CommunityCard(city: Content<CityItem>) {
-    const events = readContent<Event>(`events`)
-        .filter(event => event.data.city === city.slug)
-        .sort(sortByDate);
+    const belarus = readContent<Event>(`events/belarus/${city.slug}`).sort(sortByDate);
+    const russia = readContent<Event>(`events/russia/${city.slug}`).sort(sortByDate);
+    const ukraine = readContent<Event>(`events/ukraine/${city.slug}`).sort(sortByDate);
+
+    const events = [...belarus, ...russia, ...ukraine];
 
     return (
         <>

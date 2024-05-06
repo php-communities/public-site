@@ -1,9 +1,0 @@
----
-date: 2021-05-15
-title: 'митап чата #3 '
-link: https://youtu.be/nr1883za8tM
-filters: offline,translation
-city: kzn
----
-
-Про тесты, трейты, devops в монолите, работа с kPHP и опыт перехода на GO.

@@ -1,7 +1,0 @@
----
-date: 2021-11-03
-title: онлайн-митап «Новые компоненты и подходы»
-link: https://www.youtube.com/watch?v=Z5yXirQQ-Eg
-filters: offline,translation
-city: vrn
----

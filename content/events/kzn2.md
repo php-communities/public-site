@@ -1,9 +1,0 @@
----
-date: 2020-03-28
-title: 'митап чата #2'
-link: https://youtu.be/Bxe8FQyaCBs
-filters: offline,translation
-city: kzn
----
-
-Про легаси, монолиты, CQRS, GraphQL, редкие утилиты и вредные советы разработчику.

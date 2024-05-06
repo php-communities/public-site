@@ -3,12 +3,30 @@ import { clsx } from 'clsx';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/_components/core/tabs/tabs';
 import EventCards from '@/(home)/_components/events/cards';
 import { EventFilters, EventTabs } from '@/(home)/_components/events/mocks';
+import { CityItem } from '@/(home)/_components/places';
 import { Event } from '~/lib/types/events';
-import { sortByDate, sortByDateDesc } from '~/lib/utils/helpers';
-import { readContent } from '~/lib/utils/read-content';
+import { sortByAlphabet, sortByDate, sortByDateDesc } from '~/lib/utils/helpers';
+import { Content, readContent } from '~/lib/utils/read-content';
 
 export function Events() {
-    const all = readContent<Event>('events');
+    const belarus = readContent<CityItem>(`communities/belarus`).sort(sortByAlphabet);
+    const russia = readContent<CityItem>(`communities/russia`).sort(sortByAlphabet);
+    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(sortByAlphabet);
+
+    const cities = [...belarus, ...russia, ...ukraine];
+
+    let all: Content<Event>[] = [];
+
+    cities.forEach(city => {
+        const belarus = readContent<Event>(`events/belarus/${city.slug}`).sort(sortByDate);
+        const russia = readContent<Event>(`events/russia/${city.slug}`).sort(sortByDate);
+        const ukraine = readContent<Event>(`events/ukraine/${city.slug}`).sort(sortByDate);
+
+        const events = [...belarus, ...russia, ...ukraine];
+
+        all = [...all, ...events];
+    });
+
     const soon = all.filter(item => new Date(item.data.date) > new Date()).sort(sortByDateDesc);
     const passed = all.filter(item => new Date(item.data.date) <= new Date()).sort(sortByDate);
 

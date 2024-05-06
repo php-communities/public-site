@@ -1,7 +1,0 @@
----
-date: 2021-01-09
-title: 'симпозиум чата #1'
-link:
-filters: offline,translation
-city: dgs
----

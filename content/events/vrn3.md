@@ -1,7 +1,0 @@
----
-date: 2021-12-03
-title: онлайн-митап «Организация и экономия своего времени»
-link: https://youtu.be/S8ZCWUoVkvQ
-filters: offline,translation
-city: vrn
----

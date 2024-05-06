@@ -1,9 +1,0 @@
----
-date: 2021-05-06
-title: 'митап чата #2'
-link: https://youtu.be/FVU_MXplFzM
-filters: offline,translation
-city: kld
----
-
-Про геймдев на PHP и пользу Camunda.
