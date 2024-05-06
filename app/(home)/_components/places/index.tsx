@@ -14,9 +14,9 @@ export type CountryProps = {
 };
 
 export function Places() {
-    const belarus = readContent<CityItem>(`communities/belarus`).sort(sortByAlphabet);
-    const russia = readContent<CityItem>(`communities/russia`).sort(sortByAlphabet);
-    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(sortByAlphabet);
+    const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByAlphabet);
+    const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByAlphabet);
+    const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByAlphabet);
 
     return (
         <div className="w-full lg:scroll-mt-[68px]" id="city">

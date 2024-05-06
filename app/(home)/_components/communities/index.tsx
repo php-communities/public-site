@@ -4,9 +4,9 @@ import { sortByAlphabet } from '~/lib/utils/helpers';
 import { readContent } from '~/lib/utils/read-content';
 
 export function Communities() {
-    const belarus = readContent<CityItem>(`communities/belarus`).sort(sortByAlphabet);
-    const russia = readContent<CityItem>(`communities/russia`).sort(sortByAlphabet);
-    const ukraine = readContent<CityItem>(`communities/ukraine`).sort(sortByAlphabet);
+    const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByAlphabet);
+    const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByAlphabet);
+    const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByAlphabet);
 
     return (
         <div className="w-full">

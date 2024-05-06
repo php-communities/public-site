@@ -10,12 +10,12 @@ import ChannelsCard, { ChannelsProps } from '@/(home)/_components/channels/card'
 import { readContent } from '~/lib/utils/read-content';
 
 export function Channels() {
-    const news = readContent<ChannelsProps>('channels/news');
-    const frameworks = readContent<ChannelsProps>('channels/frameworks');
-    const chats = readContent<ChannelsProps>('channels/chats');
-    const podcasts = readContent<ChannelsProps>('channels/podcasts');
-    const youtube = readContent<ChannelsProps>('channels/youtube');
-    const jobs = readContent<ChannelsProps>('channels/jobs');
+    const news = readContent<ChannelsProps>('channels/news/*');
+    const frameworks = readContent<ChannelsProps>('channels/frameworks/*');
+    const chats = readContent<ChannelsProps>('channels/chats/*');
+    const podcasts = readContent<ChannelsProps>('channels/podcasts/*');
+    const youtube = readContent<ChannelsProps>('channels/youtube/*');
+    const jobs = readContent<ChannelsProps>('channels/jobs/*');
 
     return (
         <div className="w-full pb-[45px] lg:scroll-mt-[68px] lg:pb-[90px]" id="chat">

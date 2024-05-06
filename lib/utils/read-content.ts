@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+import { glob } from 'glob';
 import matter from 'gray-matter';
 
 export type Content<T> = {
@@ -11,18 +12,12 @@ export type Content<T> = {
 
 export function readContent<T = { [key: string]: unknown }>(directory: string): Content<T>[] {
     const directoryPath = path.join(process.cwd(), `content/${directory}`);
-
-    if (!fs.existsSync(directoryPath)) {
-        return [];
-    }
-
-    const fileNames = fs.readdirSync(directoryPath);
+    const fileNames = glob.sync(directoryPath);
 
     // @ts-expect-error gray-matter returns any
     return fileNames.map(fileName => {
-        const slug = fileName.replace(/\.md$/, '');
-        const fullPath = path.join(directoryPath, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
+        const slug = fileName.split('/').at(-1)?.replace(/\.md$/, '');
+        const fileContents = fs.readFileSync(fileName, 'utf8');
         const matterResult = matter(fileContents);
         return { slug, ...matterResult };
     });

@@ -3,7 +3,7 @@ import { readContent } from '~/lib/utils/read-content';
 import UsefulLinksCard, { UsefulLinksProps } from './card';
 
 export function UsefulLinks() {
-    const cards = readContent<UsefulLinksProps>('useful-links');
+    const cards = readContent<UsefulLinksProps>('useful-links/*');
 
     return (
         <div className="w-full bg-gray-bg">
