@@ -1,5 +1,7 @@
 # Публичный сайт phpcommunity.ru
 
+~[site cover](./public/images/content/main-image.png)
+
 Сайт сделал через nextjs. Опубликован на vercel.
 Управляется *.md файлами. Контрибьтится через open source.
 
