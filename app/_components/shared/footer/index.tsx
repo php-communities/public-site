@@ -18,13 +18,21 @@ export function Footer() {
                 </Link>
                 <div className="text-center font-light text-white">
                     Сайт поддерживается php сообществом в{' '}
-                    <a href="https://github.com/php-communities/public-site" target="_blank">
+                    <Link
+                        className="transition hover:opacity-70"
+                        href="https://github.com/php-communities/public-site"
+                        target="_blank"
+                    >
                         open source
-                    </a>{' '}
+                    </Link>{' '}
                     и ребятами из{' '}
-                    <a href="https://webpractik.ru" target="_blank">
+                    <Link
+                        className="transition hover:opacity-70"
+                        href="https://webpractik.ru"
+                        target="_blank"
+                    >
                         Вебпрактик
-                    </a>
+                    </Link>
                     .
                 </div>
             </div>

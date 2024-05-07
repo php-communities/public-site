@@ -19,9 +19,9 @@ function EventCards({ cards, count = 12 }: EventCardsProps) {
             {cards.length > 0 && (
                 <>
                     <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-                        {items.map(({ slug, content, data }: Content<Event>) => (
+                        {items.map(({ slug, content, data }: Content<Event>, index) => (
                             <EventCard
-                                key={slug}
+                                key={index}
                                 slug={slug}
                                 date={data.date}
                                 title={data.title}
