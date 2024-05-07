@@ -62,8 +62,12 @@ function CommunityCard(city: Content<CityItem>) {
 
                                 <MarkdownView
                                     markdown={city.content ?? ''}
-                                    options={{ tables: true, emoji: true }}
                                     className="md-content"
+                                    options={{
+                                        tables: true,
+                                        emoji: true,
+                                        openLinksInNewWindow: true,
+                                    }}
                                 />
                             </div>
                         </div>

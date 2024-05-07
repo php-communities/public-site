@@ -12,6 +12,7 @@ export function Footer() {
                 <Link
                     className="mx-auto mb-[100px] block w-[64px]"
                     href="https://github.com/php-communities/public-site"
+                    target="_blank"
                 >
                     <GithubIcon className="fill-white transition hover:fill-black" />
                 </Link>

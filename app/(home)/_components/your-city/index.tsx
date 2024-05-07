@@ -23,6 +23,7 @@ export function YourCity() {
                         <Link
                             className="text-link underline underline-offset-4 transition hover:opacity-70"
                             href="https://habr.com/ru/company/skyeng/blog/480484/"
+                            target="_blank"
                         >
                             BeerPHP: что это, зачем идти и как запустить у себя в городе
                         </Link>{' '}

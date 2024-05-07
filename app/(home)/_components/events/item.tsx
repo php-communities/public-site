@@ -17,6 +17,7 @@ function EventItem({ date, title, text, link }: EventItemProps) {
             {link ? (
                 <Link
                     href={link}
+                    target="_blank"
                     className="font-bold text-link underline transition hover:opacity-70"
                 >
                     {title}
