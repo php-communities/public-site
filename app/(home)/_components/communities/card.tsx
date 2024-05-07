@@ -5,11 +5,12 @@ import MarkdownView from 'react-showdown';
 import EventItem from '@/(home)/_components/events/item';
 import { CityItem } from '@/(home)/_components/places';
 import { Event } from '~/lib/types/events';
-import { sortByDate } from '~/lib/utils/helpers';
+import { groupByYear, sortByDate } from '~/lib/utils/helpers';
 import { Content, readContent } from '~/lib/utils/read-content';
 
 function CommunityCard(city: Content<CityItem>) {
     const events = readContent<Event>(`events/*/${city.slug}/*`).sort(sortByDate);
+    const items = groupByYear(events);
 
     return (
         <>
@@ -20,7 +21,7 @@ function CommunityCard(city: Content<CityItem>) {
                             {city.data.title}
                         </div>
                         <div className="flex flex-col md:flex-row md:space-x-8">
-                            <div className="mb-[32px] w-full md:mb-0 md:w-1/2">
+                            <div className="mb-[32px] w-full space-y-5 md:mb-0 md:w-1/2">
                                 <Image
                                     className="mb-[20px]"
                                     src="/images/svg/chat-bubbles.svg"
@@ -32,18 +33,28 @@ function CommunityCard(city: Content<CityItem>) {
                                     Прошедшие мероприятия
                                 </div>
 
-                                {events.length > 0 &&
-                                    events.map(event => (
-                                        <EventItem
-                                            key={event.slug}
-                                            date={event.data.date}
-                                            title={event.data.title}
-                                            text={event.content}
-                                            link={event.data.link}
-                                        />
-                                    ))}
+                                {Object.keys(items).length > 0 &&
+                                    Object.keys(items)
+                                        .sort((a, b) => Number(b) - Number(a))
+                                        .map(year => (
+                                            <div key={year}>
+                                                <div className="mb-0.5 font-bold">{year}</div>
 
-                                {events.length === 0 && (
+                                                {items[Number(year)]?.map(
+                                                    (event: Content<Event>) => (
+                                                        <EventItem
+                                                            key={event.slug}
+                                                            date={event.data.date}
+                                                            title={event.data.title}
+                                                            text={event.content}
+                                                            link={event.data.link}
+                                                        />
+                                                    )
+                                                )}
+                                            </div>
+                                        ))}
+
+                                {Object.keys(items).length === 0 && (
                                     <div className="font-light">Все впереди :)</div>
                                 )}
                             </div>
