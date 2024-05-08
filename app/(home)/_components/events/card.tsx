@@ -11,6 +11,7 @@ function EventCard({ slug, date, title, text, link, filters }: Event) {
             <Link
                 key={slug}
                 href={link}
+                target="_blank"
                 className="bg-blue-bg p-5 shadow transition hover:shadow-lg"
             >
                 <div className="mb-2.5 font-inter text-[13px] font-bold text-blue-light">

@@ -12,7 +12,7 @@ export type ChannelsProps = {
 
 function ChannelsCard({ imgSrc, title, text, link }: ChannelsProps) {
     return (
-        <Link href={link} className="group">
+        <Link href={link} target="_blank" className="group">
             <div className="mb-[20px]">
                 <Image className="object-cover" src={imgSrc} alt={title} width={266} height={266} />
             </div>

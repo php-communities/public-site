@@ -19,6 +19,7 @@ export function readContent<T = { [key: string]: unknown }>(directory: string): 
         const slug = fileName.split('/').at(-1)?.replace(/\.md$/, '');
         const fileContents = fs.readFileSync(fileName, 'utf8');
         const matterResult = matter(fileContents);
-        return { slug, ...matterResult };
+        const { data, content } = matterResult;
+        return { slug, data, content };
     });
 }

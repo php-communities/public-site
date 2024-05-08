@@ -11,7 +11,7 @@ export type UsefulLinksProps = {
 
 function UsefulLinksCard({ title, link, text, imgSrc }: UsefulLinksProps) {
     return (
-        <Link className="group flex flex-col bg-white" href={link}>
+        <Link className="group flex flex-col bg-white" href={link} target="_blank">
             <div className="h-[200px] bg-blue-bg md:h-[300px]">
                 <Image
                     className="size-full object-cover"

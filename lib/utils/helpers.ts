@@ -2,6 +2,10 @@ import { CityItem } from '@/(home)/_components/places';
 import { Event } from '~/lib/types/events';
 import { Content } from '~/lib/utils/read-content';
 
+export type EventGroup = {
+    [year: number]: Content<Event>[];
+};
+
 export const dateFormat = (iso: string) =>
     new Intl.DateTimeFormat('ru-RU', { dateStyle: 'short' }).format(new Date(iso));
 
@@ -26,4 +30,20 @@ export const sortByDate = (a: Content<Event>, b: Content<Event>) => {
 
 export const sortByDateDesc = (a: Content<Event>, b: Content<Event>) => {
     return Number(new Date(a.data.date)) - Number(new Date(b.data.date));
+};
+
+export const groupByYear = (array: Content<Event>[]) => {
+    const grouped: EventGroup = {};
+
+    array.forEach(object => {
+        const year = new Date(object.data.date).getFullYear();
+
+        if (!grouped[year]) {
+            grouped[year] = [];
+        }
+
+        grouped[year]?.push(object);
+    });
+
+    return grouped;
 };
