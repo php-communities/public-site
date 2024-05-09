@@ -13,10 +13,6 @@ jiti('./env/server');
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-    output: 'export',
-
-    basePath: '',
-
     reactStrictMode: true,
 
     poweredByHeader: false,
