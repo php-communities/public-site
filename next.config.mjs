@@ -4,10 +4,12 @@ import { nanoid } from 'nanoid';
 import { fileURLToPath } from 'node:url';
 import createJiti from 'jiti';
 
+const isProd = process.env.NODE_ENV === 'production';
 const jiti = createJiti(fileURLToPath(import.meta.url));
 
 jiti('./env/client');
 jiti('./env/server');
+
 
 /**
  * @type {import('next').NextConfig}
@@ -15,7 +17,7 @@ jiti('./env/server');
 const nextConfig = {
     output: 'export',
 
-    basePath: '',
+    basePath: isProd ? '/public-site' : '',
 
     trailingSlash: true,
 
