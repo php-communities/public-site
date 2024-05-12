@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/jobs/1.jpg
+imgSrc: ${basePath}/images/content/channels/jobs/1.jpg
 title: PHP — вакансии, поиск работы и аналитика
 link: https://t.me/php_jobs
 ---

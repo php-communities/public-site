@@ -1,7 +1,7 @@
 ---
 name: Воронеж
 title: PHP-сообщество в Воронеже
-imgSrc: /images/content/communities/vrn.png
+imgSrc: ${basePath}/images/content/communities/vrn.png
 ---
 
 **[@php_vrn](https://t.me/php_vrn)** — чат городского сообщества

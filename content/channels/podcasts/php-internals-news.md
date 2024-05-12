@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/1.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/1.jpg
 title: PHP Internals News
 link: https://phpinternals.news/
 ---

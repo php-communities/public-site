@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/9.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/9.jpg
 title: The Laravel Podcast
 link: https://www.laravelpodcast.com/
 ---

@@ -1,7 +1,7 @@
 ---
 name: Ростов
 title: PHP-сообщество в Ростове-на-Дону
-imgSrc: /images/content/communities/rnd.jpg
+imgSrc: ${basePath}/images/content/communities/rnd.jpg
 ---
 
 **[@rndphp](https://t.me/rndphp)** — чат городского сообщества.

@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/jobs/3.jpg
+imgSrc: ${basePath}/images/content/channels/jobs/3.jpg
 title: SuperJob - IT-вакансии
 link: https://t.me/superjob_it
 ---

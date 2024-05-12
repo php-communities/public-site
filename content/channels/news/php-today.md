@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/9.jpg
+imgSrc: ${basePath}/images/content/channels/news/9.jpg
 title: PHP.today
 link: https://t.me/phptoday
 ---

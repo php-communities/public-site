@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/6.jpeg
+imgSrc: ${basePath}/images/content/channels/news/6.jpeg
 title: Beerphp
 link: https://t.me/beerphp
 ---

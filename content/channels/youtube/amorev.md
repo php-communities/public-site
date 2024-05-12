@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/13.jpg
+imgSrc: ${basePath}/images/content/channels/youtube/13.jpg
 title: amorev
 link: https://www.youtube.com/c/amorev/search?query=php
 ---

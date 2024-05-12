@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/7.jpg
+imgSrc: ${basePath}/images/content/channels/news/7.jpg
 title: Amazing PHP
 link: https://t.me/phpme
 ---

@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/jobs/7.jpg
+imgSrc: ${basePath}/images/content/channels/jobs/7.jpg
 title: Вакансии для веб-разработчиков
 link: https://t.me/fordev
 ---

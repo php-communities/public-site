@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/chats/4.jpeg
+imgSrc: ${basePath}/images/content/channels/chats/4.jpeg
 title: Пыхтелка
 link: https://t.me/phpyhtelka
 ---

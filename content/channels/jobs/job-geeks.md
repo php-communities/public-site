@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/jobs/5.jpg
+imgSrc: ${basePath}/images/content/channels/jobs/5.jpg
 title: jobGeeks
 link: https://t.me/jobGeeks
 ---

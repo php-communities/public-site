@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/23.jpg
+imgSrc: ${basePath}/images/content/channels/youtube/23.jpg
 title: International PHP Conference
 link: https://www.youtube.com/user/PHPcon
 ---

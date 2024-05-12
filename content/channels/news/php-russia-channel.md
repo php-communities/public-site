@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/1.jpg
+imgSrc: ${basePath}/images/content/channels/news/1.jpg
 title: PHP Russia Channel
 link: https://t.me/PHPRussiaConfChannel
 ---

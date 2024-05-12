@@ -4,6 +4,8 @@ import path from 'node:path';
 import { glob } from 'glob';
 import matter from 'gray-matter';
 
+import { basePath } from '~/lib/consts/base-path.mjs';
+
 export type Content<T> = {
     slug: string;
     content: string;
@@ -17,7 +19,10 @@ export function readContent<T = { [key: string]: unknown }>(directory: string): 
     // @ts-expect-error gray-matter returns any
     return fileNames.map(fileName => {
         const slug = fileName.split('/').at(-1)?.replace(/\.md$/, '');
-        const fileContents = fs.readFileSync(fileName, 'utf8');
+        const fileContents = fs
+            .readFileSync(fileName, 'utf8')
+            .replaceAll(/\${basepath}/gi, basePath);
+
         const matterResult = matter(fileContents);
         const { data, content } = matterResult;
         return { slug, data, content };

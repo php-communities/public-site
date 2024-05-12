@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/5.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/5.jpg
 title: Podlodka Podcast
 link: https://podlodka.io/180
 ---

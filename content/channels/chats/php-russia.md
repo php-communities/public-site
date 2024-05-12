@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/chats/2.webp
+imgSrc: ${basePath}/images/content/channels/chats/2.webp
 title: PHP Russia
 link: https://t.me/PHPRussiaConfTalks
 ---

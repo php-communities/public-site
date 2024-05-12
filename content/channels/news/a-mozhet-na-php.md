@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/4.jpeg
+imgSrc: ${basePath}/images/content/channels/news/4.jpeg
 title: А может на PHP?
 link: https://t.me/maybe_php
 ---

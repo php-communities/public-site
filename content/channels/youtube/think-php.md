@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/12.png
+imgSrc: ${basePath}/images/content/channels/youtube/12.png
 title: ThinkPHP
 link: https://www.youtube.com/user/thinkphpcomua
 ---

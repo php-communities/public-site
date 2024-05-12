@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/frameworks/7.jpg
+imgSrc: ${basePath}/images/content/channels/frameworks/7.jpg
 title: Yii Framework 3
 link: https://t.me/yii3ru
 ---

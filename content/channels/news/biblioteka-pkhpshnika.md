@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/5.jpg
+imgSrc: ${basePath}/images/content/channels/news/5.jpg
 title: Библиотека пхпшника
 link: https://t.me/phpproglib
 ---

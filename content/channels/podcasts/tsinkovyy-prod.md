@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/2.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/2.jpg
 title: Цинковый прод
 link: https://soundcloud.com/znprod
 ---

@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/frameworks/8.jpg
+imgSrc: ${basePath}/images/content/channels/frameworks/8.jpg
 title: Laravel для новичков
 link: https://t.me/laravel_web
 ---

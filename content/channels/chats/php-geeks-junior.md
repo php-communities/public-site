@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/chats/7.jpg
+imgSrc: ${basePath}/images/content/channels/chats/7.jpg
 title: php Geeks Junior
 link: https://t.me/phpGeeksJunior
 ---

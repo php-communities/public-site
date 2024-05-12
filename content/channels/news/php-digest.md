@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/2.jpg
+imgSrc: ${basePath}/images/content/channels/news/2.jpg
 title: PHP Digest
 link: https://t.me/phpdigest
 ---

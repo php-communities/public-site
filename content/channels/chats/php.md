@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/chats/1.jpg
+imgSrc: ${basePath}/images/content/channels/chats/1.jpg
 title: PHP
 link: https://t.me/prophp7
 ---

@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/8.jpg
+imgSrc: ${basePath}/images/content/channels/youtube/8.jpg
 title: PHP Channel
 link: https://www.youtube.com/channel/UCxLQ9eT6YHnc6dMLRFzEc7Q
 ---

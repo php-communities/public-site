@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/chats/8.png
+imgSrc: ${basePath}/images/content/channels/chats/8.png
 title: phpclub.ru
 link: https://t.me/phpclubru
 ---

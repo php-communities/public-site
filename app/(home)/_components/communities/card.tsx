@@ -4,6 +4,7 @@ import MarkdownView from 'react-showdown';
 
 import EventItem from '@/(home)/_components/events/item';
 import { CityItem } from '@/(home)/_components/places';
+import { basePath } from '~/lib/consts/base-path.mjs';
 import { Event } from '~/lib/types/events';
 import { groupByYear, sortByDate } from '~/lib/utils/helpers';
 import { Content, readContent } from '~/lib/utils/read-content';
@@ -24,7 +25,7 @@ function CommunityCard(city: Content<CityItem>) {
                             <div className="mb-[32px] w-full space-y-5 md:mb-0 md:w-1/2">
                                 <Image
                                     className="mb-[20px]"
-                                    src="/images/svg/chat-bubbles.svg"
+                                    src={`${basePath}/images/svg/chat-bubbles.svg`}
                                     alt="Прошедшие мероприятия"
                                     width={15}
                                     height={15}
@@ -62,7 +63,7 @@ function CommunityCard(city: Content<CityItem>) {
                             <div className="w-full md:w-1/2">
                                 <Image
                                     className="mb-[20px]"
-                                    src="/images/svg/send-button.svg"
+                                    src={`${basePath}/images/svg/send-button.svg`}
                                     alt="PHP-чаты и каналы"
                                     width={15}
                                     height={15}

@@ -3,13 +3,12 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 import { nanoid } from 'nanoid';
 import { fileURLToPath } from 'node:url';
 import createJiti from 'jiti';
+import { basePath } from "./lib/consts/base-path.mjs";
 
-const isProd = process.env.NODE_ENV === 'production';
 const jiti = createJiti(fileURLToPath(import.meta.url));
 
 jiti('./env/client');
 jiti('./env/server');
-
 
 /**
  * @type {import('next').NextConfig}
@@ -17,7 +16,7 @@ jiti('./env/server');
 const nextConfig = {
     output: 'export',
 
-    basePath: isProd ? '/public-site' : '',
+    basePath,
 
     trailingSlash: true,
 
@@ -53,9 +52,6 @@ const nextConfig = {
 
     images: {
         unoptimized: true,
-        disableStaticImages: true,
-        dangerouslyAllowSVG: true,
-        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
 
     logging: {

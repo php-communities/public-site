@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/1.jpg
+imgSrc: ${basePath}/images/content/channels/youtube/1.jpg
 title: Канал Евгения Кувшинова
 link: https://www.youtube.com/c/EvgeniyKuvshinov/
 ---

@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/6.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/6.jpg
 title: PHPUgly
 link: https://phpugly.simplecast.com/
 ---

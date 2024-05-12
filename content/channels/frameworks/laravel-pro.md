@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/frameworks/3.jpg
+imgSrc: ${basePath}/images/content/channels/frameworks/3.jpg
 title: Laravel Pro
 link: https://t.me/laravel_pro
 ---

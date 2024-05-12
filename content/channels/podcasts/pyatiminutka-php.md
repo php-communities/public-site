@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/3.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/3.jpg
 title: Пятиминутка PHP
 link: https://5minphp.ru/
 ---

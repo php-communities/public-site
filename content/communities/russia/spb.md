@@ -1,7 +1,7 @@
 ---
 name: Санкт-Петербург
 title: PHP-сообщества в Санкт-Петербурге
-imgSrc: /images/content/communities/spb.jpg
+imgSrc: ${basePath}/images/content/communities/spb.jpg
 ---
 
 **[@beerphp_spb](https://t.me/beerphp_spb)** — чат городского сообщества.

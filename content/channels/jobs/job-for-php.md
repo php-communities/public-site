@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/jobs/2.jpg
+imgSrc: ${basePath}/images/content/channels/jobs/2.jpg
 title: Job for PHP
 link: https://t.me/jobforphp
 ---

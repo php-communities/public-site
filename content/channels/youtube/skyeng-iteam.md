@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/2.jpeg
+imgSrc: ${basePath}/images/content/channels/youtube/2.jpeg
 title: Skyeng ITeam
 link: https://www.youtube.com/playlist?list=PLyQw8knu4zeGdG6QVZ1CxGrRsjEfrAN66
 ---

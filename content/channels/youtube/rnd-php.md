@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/25.jpg
+imgSrc: ${basePath}/images/content/channels/youtube/25.jpg
 title: RND PHP
 link: https://www.youtube.com/channel/UC1KvBdMDxZpsOecra6-Kw6g
 ---

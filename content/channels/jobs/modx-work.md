@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/jobs/11.jpg
+imgSrc: ${basePath}/images/content/channels/jobs/11.jpg
 title: MODX Work
 link: https://t.me/ru_modx_work
 ---

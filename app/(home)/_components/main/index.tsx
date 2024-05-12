@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { basePath } from '~/lib/consts/base-path.mjs';
+
 export function Main() {
     return (
         <div className="w-full bg-blue">
@@ -18,7 +20,7 @@ export function Main() {
                     <div className="flex lg:w-1/2 lg:items-end">
                         <Image
                             className="z-[1] object-cover"
-                            src="/images/content/main-image.png"
+                            src={`${basePath}/images/content/main-image.png`}
                             alt="PHP-сообщества в России, Беларуси, Украине"
                             width="630"
                             height="300"

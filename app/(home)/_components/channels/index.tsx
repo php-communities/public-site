@@ -7,6 +7,7 @@ import {
     AccordionTrigger,
 } from '@/_components/core/accordion/accordion';
 import ChannelsCard, { ChannelsProps } from '@/(home)/_components/channels/card';
+import { basePath } from '~/lib/consts/base-path.mjs';
 import { readContent } from '~/lib/utils/read-content';
 
 export function Channels() {
@@ -22,7 +23,7 @@ export function Channels() {
             <div className="container mx-auto">
                 <div className="flex items-center justify-center">
                     <Image
-                        src="/images/content/channels.png"
+                        src={`${basePath}/images/content/channels.png`}
                         alt="Текстовые и видео каналы и чаты, чтобы оставаться в курсе"
                         width={410}
                         height={239}

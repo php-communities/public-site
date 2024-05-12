@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/youtube/21.jpg
+imgSrc: ${basePath}/images/content/channels/youtube/21.jpg
 title: MobiDev University
 link: https://www.youtube.com/user/MobiDevChannel/search?query=php
 ---

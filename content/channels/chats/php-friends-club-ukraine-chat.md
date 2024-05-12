@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/chats/6.jpeg
+imgSrc: ${basePath}/images/content/channels/chats/6.jpeg
 title: PHP Friends Club Ukraine Chat
 link: https://t.me/phpfriendsclub_chat
 ---

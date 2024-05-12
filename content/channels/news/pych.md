@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/news/10.webp
+imgSrc: ${basePath}/images/content/channels/news/10.webp
 title: Пых
 link: https://t.me/phpyh
 ---

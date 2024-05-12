@@ -1,5 +1,5 @@
 ---
-imgSrc: /images/content/channels/podcasts/4.jpg
+imgSrc: ${basePath}/images/content/channels/podcasts/4.jpg
 title: Между скобок
 link: https://soundcloud.com/between-braces
 ---
