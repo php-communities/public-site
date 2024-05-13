@@ -32,6 +32,10 @@ export const sortByDateDesc = (a: Content<Event>, b: Content<Event>) => {
     return Number(new Date(a.data.date)) - Number(new Date(b.data.date));
 };
 
+export const sortBySlug = <T>(a: Content<T>, b: Content<T>) => {
+    return Number(a.slug) - Number(b.slug);
+};
+
 export const groupByYear = (array: Content<Event>[]) => {
     const grouped: EventGroup = {};
 

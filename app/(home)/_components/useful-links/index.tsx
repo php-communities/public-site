@@ -1,9 +1,12 @@
+import { sortBySlug } from '~/lib/utils/helpers';
 import { readContent } from '~/lib/utils/read-content';
 
 import UsefulLinksCard, { UsefulLinksProps } from './card';
 
 export function UsefulLinks() {
-    const cards = readContent<UsefulLinksProps>('useful-links/*');
+    const cards = readContent<UsefulLinksProps>('useful-links/*').sort(
+        sortBySlug<UsefulLinksProps>
+    );
 
     return (
         <div className="w-full bg-gray-bg">

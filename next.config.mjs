@@ -3,7 +3,7 @@ import withBundleAnalyzer from '@next/bundle-analyzer';
 import { nanoid } from 'nanoid';
 import { fileURLToPath } from 'node:url';
 import createJiti from 'jiti';
-import { basePath } from "./lib/consts/base-path.mjs";
+import { basePath } from './lib/consts/base-path.mjs';
 
 const jiti = createJiti(fileURLToPath(import.meta.url));
 
