@@ -8,15 +8,22 @@ import {
 } from '@/_components/core/accordion/accordion';
 import ChannelsCard, { ChannelsProps } from '@/(home)/_components/channels/card';
 import { basePath } from '~/lib/consts/base-path.mjs';
+import { sortBySlug } from '~/lib/utils/helpers';
 import { readContent } from '~/lib/utils/read-content';
 
 export function Channels() {
-    const news = readContent<ChannelsProps>('channels/news/*');
-    const frameworks = readContent<ChannelsProps>('channels/frameworks/*');
-    const chats = readContent<ChannelsProps>('channels/chats/*');
-    const podcasts = readContent<ChannelsProps>('channels/podcasts/*');
-    const youtube = readContent<ChannelsProps>('channels/youtube/*');
-    const jobs = readContent<ChannelsProps>('channels/jobs/*');
+    const news = readContent<ChannelsProps>('channels/news/*').sort(sortBySlug<ChannelsProps>);
+    const frameworks = readContent<ChannelsProps>('channels/frameworks/*').sort(
+        sortBySlug<ChannelsProps>
+    );
+    const chats = readContent<ChannelsProps>('channels/chats/*').sort(sortBySlug<ChannelsProps>);
+    const podcasts = readContent<ChannelsProps>('channels/podcasts/*').sort(
+        sortBySlug<ChannelsProps>
+    );
+    const youtube = readContent<ChannelsProps>('channels/youtube/*').sort(
+        sortBySlug<ChannelsProps>
+    );
+    const jobs = readContent<ChannelsProps>('channels/jobs/*').sort(sortBySlug<ChannelsProps>);
 
     return (
         <div className="w-full pb-[45px] lg:scroll-mt-[68px] lg:pb-[90px]" id="chat">
