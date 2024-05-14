@@ -1,5 +1,5 @@
 import Country from '@/(home)/_components/places/country';
-import { sortByAlphabet } from '~/lib/utils/helpers';
+import { sortByName } from '~/lib/utils/helpers';
 import { Content, readContent } from '~/lib/utils/read-content';
 
 export type CityItem = {
@@ -14,9 +14,9 @@ export type CountryProps = {
 };
 
 export function Places() {
-    const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByAlphabet);
-    const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByAlphabet);
-    const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByAlphabet);
+    const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByName);
+    const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByName);
+    const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByName);
 
     return (
         <div className="w-full lg:scroll-mt-[68px]" id="city">

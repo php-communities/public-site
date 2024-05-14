@@ -1,9 +1,7 @@
-import { CityItem } from '@/(home)/_components/places';
-import { Event } from '~/lib/types/events';
 import { Content } from '~/lib/utils/read-content';
 
-export type EventGroup = {
-    [year: number]: Content<Event>[];
+export type YearGroup<T> = {
+    [year: number]: Content<T>[];
 };
 
 export const dateFormat = (iso: string) =>
@@ -12,7 +10,7 @@ export const dateFormat = (iso: string) =>
 export const dateToRuFormat = (iso: string) =>
     new Intl.DateTimeFormat('ru-RU', { dateStyle: 'long' }).format(new Date(iso));
 
-export const sortByAlphabet = (a: Content<CityItem>, b: Content<CityItem>) => {
+export const sortByName = <T extends { name: string }>(a: Content<T>, b: Content<T>) => {
     if (a.data.name.toLowerCase() < b.data.name.toLowerCase()) {
         return -1;
     }
@@ -24,11 +22,11 @@ export const sortByAlphabet = (a: Content<CityItem>, b: Content<CityItem>) => {
     return 0;
 };
 
-export const sortByDate = (a: Content<Event>, b: Content<Event>) => {
+export const sortByDate = <T extends { date: string }>(a: Content<T>, b: Content<T>) => {
     return Number(new Date(b.data.date)) - Number(new Date(a.data.date));
 };
 
-export const sortByDateDesc = (a: Content<Event>, b: Content<Event>) => {
+export const sortByDateDesc = <T extends { date: string }>(a: Content<T>, b: Content<T>) => {
     return Number(new Date(a.data.date)) - Number(new Date(b.data.date));
 };
 
@@ -36,8 +34,8 @@ export const sortBySlug = <T>(a: Content<T>, b: Content<T>) => {
     return Number(a.slug) - Number(b.slug);
 };
 
-export const groupByYear = (array: Content<Event>[]) => {
-    const grouped: EventGroup = {};
+export const groupByYear = <T extends { date: string }>(array: Content<T>[]) => {
+    const grouped: YearGroup<T> = {};
 
     array.forEach(object => {
         const year = new Date(object.data.date).getFullYear();
