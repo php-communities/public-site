@@ -17,6 +17,7 @@ export function Places() {
     const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByName);
     const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByName);
     const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByName);
+    const georgia = readContent<CityItem>(`communities/georgia/*`).sort(sortByName);
 
     return (
         <div className="w-full lg:scroll-mt-[68px]" id="city">
@@ -24,6 +25,7 @@ export function Places() {
                 <Country name="Беларусь" cities={belarus} />
                 <Country name="Россия" cities={russia} />
                 <Country name="Украина" cities={ukraine} />
+                <Country name="Грузия" cities={georgia} />
             </div>
         </div>
     );
