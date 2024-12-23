@@ -5,6 +5,7 @@ import { readContent } from '~/lib/utils/read-content';
 
 export function Communities() {
     const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByName);
+    const bulgaria = readContent<CityItem>(`communities/bulgaria/*`).sort(sortByName);
     const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByName);
     const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByName);
     const georgia = readContent<CityItem>(`communities/georgia/*`).sort(sortByName);
@@ -12,6 +13,15 @@ export function Communities() {
     return (
         <div className="w-full">
             {belarus.map(city => (
+                <CommunityCard
+                    key={city.slug}
+                    slug={city.slug}
+                    data={city.data}
+                    content={city.content}
+                />
+            ))}
+
+            {bulgaria.map(city => (
                 <CommunityCard
                     key={city.slug}
                     slug={city.slug}

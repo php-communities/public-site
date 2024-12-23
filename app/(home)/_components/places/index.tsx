@@ -15,6 +15,7 @@ export type CountryProps = {
 
 export function Places() {
     const belarus = readContent<CityItem>(`communities/belarus/*`).sort(sortByName);
+    const bulgaria = readContent<CityItem>(`communities/bulgaria/*`).sort(sortByName);
     const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByName);
     const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByName);
     const georgia = readContent<CityItem>(`communities/georgia/*`).sort(sortByName);
