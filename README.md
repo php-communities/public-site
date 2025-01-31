@@ -24,5 +24,6 @@
 ```sh
 git clone https://github.com/php-communities/public-site
 npm ci
+cp .env_example .env
 npm run dev
 ```
