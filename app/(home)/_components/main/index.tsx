@@ -5,6 +5,27 @@ import { basePath } from '~/lib/consts/base-path.mjs';
 export function Main() {
     return (
         <div className="w-full bg-blue">
+            <div className="container mx-auto pt-[42px] mb-[-16px] lg:pt-[100px] lg:mb-[-52px]">
+                <a
+                    href="https://conf.phpyh.ru"
+                    target="_blank"
+                    className="block relative"
+                >
+                    <span
+                        className="flex justify-center px-3"
+                        style={{background: '#030D1C', borderRadius: '6px'}}
+                    >
+                        <img
+                            src="/images/phpyh-conf.svg"
+                            alt="Пых.конф`25"
+                            className="h-[48px] mt-[-3px] mb-[-10px] md:h-[72px] md:mt-[-5px] md:mb-[-15px]"
+                        />
+                    </span>
+                    <span className="block text-center md:text-right pr-2 mt-2 md:mt-0">
+                        19 сентября <span className="whitespace-nowrap">/ Москва + Онлайн</span>
+                    </span>
+                </a>
+            </div>
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row">
                     <div className="py-14 lg:w-1/2 lg:py-28">
