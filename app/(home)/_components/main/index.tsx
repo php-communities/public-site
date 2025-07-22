@@ -6,14 +6,10 @@ export function Main() {
     return (
         <div className="w-full bg-blue">
             <div className="container mx-auto pt-[42px] mb-[-16px] lg:pt-[100px] lg:mb-[-52px]">
-                <a
-                    href="https://conf.phpyh.ru"
-                    target="_blank"
-                    className="block relative"
-                >
+                <a href="https://conf.phpyh.ru" target="_blank" className="block relative">
                     <span
                         className="flex justify-center px-3"
-                        style={{background: '#030D1C', borderRadius: '6px'}}
+                        style={{ background: '#030D1C', borderRadius: '6px' }}
                     >
                         <img
                             src="/images/phpyh-conf.svg"
