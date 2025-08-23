@@ -1,5 +1,5 @@
 ---
-name: Кипр
+name: Лимасол
 title: PHP-сообщество на Кипре
 imgSrc: ${basePath}/images/content/communities/limassol.jpg
 ---
