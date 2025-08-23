@@ -9,6 +9,7 @@ export function Communities() {
     const russia = readContent<CityItem>(`communities/russia/*`).sort(sortByName);
     const ukraine = readContent<CityItem>(`communities/ukraine/*`).sort(sortByName);
     const georgia = readContent<CityItem>(`communities/georgia/*`).sort(sortByName);
+    const cyprus = readContent<CityItem>(`communities/cyprus/*`).sort(sortByName);
 
     return (
         <div className="w-full">
@@ -49,6 +50,15 @@ export function Communities() {
             ))}
 
             {georgia.map(city => (
+                <CommunityCard
+                    key={city.slug}
+                    slug={city.slug}
+                    data={city.data}
+                    content={city.content}
+                />
+            ))}
+
+            {cyprus.map(city => (
                 <CommunityCard
                     key={city.slug}
                     slug={city.slug}
