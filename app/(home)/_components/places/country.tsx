@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { CountryProps } from '@/(home)/_components/places/index';
+import type { CountryProps } from '@/(home)/_components/places/index';
 
 function EventCard({ name, cities }: CountryProps) {
     return (
