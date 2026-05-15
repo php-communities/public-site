@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ежегодный опрос PHP-разработчиков — 2026: стек, AI и сообщество</title>
+<meta content="Лендинг отчёта по ежегодному опросу PHP-разработчиков 2026: версии PHP, фреймворки, архитектура, тестирование, AI, инструменты и сообщество." name="description"/>
+<link href="/css/php-survey-2026.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="container header__inner">
+<a class="skip-link" href="#key-findings">К главным выводам</a>
+<a aria-label="Наверх" class="brand" href="#top"></a>
+<nav aria-label="Разделы отчёта" class="site-nav">
+<a href="#key-findings">Выводы</a>
+<a href="#methodology">Как читать</a><a href="#raw-data">Срезы</a>
+<a href="#portrait">Портрет</a>
+<a href="#php">Работа с PHP</a>
+<a href="#infra">Инфраструктура</a>
+<a href="#ai">AI</a>
+<a href="#community">Сообщество</a>
+</nav>
+</div>
+</header>
+<main id="top">
+<section aria-labelledby="hero-title" class="hero">
+<div class="container hero__inner">
+<div class="hero__copy">
+<h1 id="hero-title">Ежегодный опрос<br/>PHP-разработчиков<br/>2026</h1>
+<p class="hero__lead">
+            818 ответов из 30 стран: версии PHP, фреймворки, архитектура, тестирование, AI, инструменты и жизнь русскоязычного PHP-сообщества.
+          </p>
+<dl class="hero__stats">
+<div>
+<dt>Ответов</dt>
+<dd>818</dd>
+</div>
+<div>
+<dt>Стран</dt>
+<dd>30</dd>
+</div>
+<div>
+<dt>Ответов с грейдом</dt>
+<dd>795</dd>
+</div>
+<div>
+<dt>Используют агентов</dt>
+<dd>58%</dd>
+</div>
+</dl>
+</div>
+<div aria-hidden="true" class="hero__media">
+<img alt="" src="/images/php-survey-2026/hero-illustration.svg"/>
+</div>
+</div>
+</section>
+<section aria-labelledby="key-findings-title" class="key-findings" id="key-findings">
+<div class="container">
+<div class="key-findings__panel">
+<div class="section-head section-head--compact">
+<div>
+<span class="section-head__eyebrow">Кратко</span>
+<h2 id="key-findings-title">6 главных изменений</h2>
+<p>Короткая карта отчёта: что изменилось в стеке, практиках и поведении PHP-разработчиков.</p>
+</div>
+</div>
+<div class="finding-grid">
+<article class="finding-card finding-card--featured">
+<span class="finding-card__type">01</span>
+<h3>PHP-аудитория взрослеет</h3>
+<p>В ответах доминируют специалисты 30–49 лет. Поэтому отчёт сильнее отражает опыт действующих инженеров, чем вход в профессию.</p>
+</article>
+<article class="finding-card">
+<span class="finding-card__type">02</span>
+<h3>PHP 8.4 быстро закрепился</h3>
+<p>PHP 8.4 уже отметили 54% участников. Современный PHP стал основной рабочей реальностью, хотя legacy всё ещё рядом.</p>
+</article>
+<article class="finding-card">
+<span class="finding-card__type">03</span>
+<h3>Laravel остаётся первым, Symfony сокращает разрыв</h3>
+<p>Laravel держит лидерство, но Symfony вырос до 40%. Разрыв между фреймворками стал меньше.</p>
+</article>
+<article class="finding-card">
+<span class="finding-card__type">04</span>
+<h3>Модульный монолит чаще у senior+</h3>
+<p>Модульный монолит заметнее у опытных разработчиков. Простой монолит чаще встречается у junior и middle.</p>
+</article>
+<article class="finding-card">
+<span class="finding-card__type">05</span>
+<h3>PHPStan вырос с 47% до 60%</h3>
+<p>Статический анализ уже почти догнал форматирование кода. Это один из самых понятных инженерных сдвигов отчёта.</p>
+</article>
+<article class="finding-card finding-card--featured">
+<span class="finding-card__type">06</span>
+<h3>AI-агенты используют 58% участников</h3>
+<p>AI уже не отдельная тема для энтузиастов. Чаты стали повседневностью, агенты быстро входят в рабочий процесс.</p>
+</article>
+</div>
+<nav aria-label="Быстрый переход по отчёту" class="section-jump">
+<a href="#portrait">Портрет</a>
+<a href="#php">PHP</a>
+<a href="#infra">Инфраструктура</a>
+<a href="#ai">AI</a>
+<a href="#community">Сообщество</a>
+<a href="#raw-data">Сырые данные</a></nav>
+</div>
+</div>
+</section>
+<section aria-labelledby="report-map-title" class="report-map" id="report-map">
+<div class="container">
+<div class="report-map__sheet">
+<div class="report-map__grid">
+<article class="map-card map-card--wide">
+<span class="section-head__eyebrow">Карта отчёта</span>
+<h2 id="report-map-title">Что есть внутри</h2>
+<ul class="map-list">
+<li>кто отвечал и какая аудитория сильнее представлена;</li>
+<li>какие версии PHP и фреймворки используют на работе;</li>
+<li>как грейд связан с архитектурой, тестированием и инструментами;</li>
+<li>что происходит с AI, агентами и инженерной автоматизацией;</li>
+<li>где живёт PHP-сообщество и чего ему не хватает.</li>
+</ul>
+</article>
+<article class="map-card">
+<span>Что заметно изменилось</span>
+<div class="mini-delta"><strong>PHPStan</strong><b>47% → 60%</b></div>
+<div class="mini-delta"><strong>Symfony</strong><b>36% → 40%</b></div>
+<div class="mini-delta"><strong>Rector</strong><b>+9 п.п.</b></div>
+</article>
+<article class="map-card">
+<span>Как читать быстро</span>
+<p>Сначала посмотрите главные выводы и сравнения, затем переходите к нужному разделу: PHP, инфраструктура, AI или сообщество.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="methodology-title" class="overview overview--after-summary" id="methodology">
+<div class="container">
+<div class="overview__sheet">
+<div class="section-head">
+<div>
+<h2 id="methodology-title">Как читать данные</h2>
+<p>Опрос отражает активную русскоязычную PHP-аудиторию: разработчиков, которые читают профессиональные каналы, следят за языком и участвуют в жизни сообщества. Это не перепись всего рынка, а срез вовлечённых специалистов.</p>
+</div>
+</div>
+<div class="summary-grid">
+<article class="summary-card">
+<span>Период</span>
+<div class="summary-card__dates">
+<strong>28.12.2025</strong>
+<strong>31.01.2026</strong>
+</div>
+<p>Опрос проводился чуть больше месяца.</p>
+</article>
+<article class="summary-card">
+<span>Страны</span>
+<strong>30 стран</strong>
+<p>Ответы собраны по всей русскоязычной аудитории сообщества.</p>
+</article>
+<article class="summary-card">
+<span>Ответы</span>
+<strong>818</strong>
+<p>Общий объём собранной выборки.</p>
+</article>
+<article class="summary-card">
+<span>Ответы с указанием грейда</span>
+<strong>795 ответов</strong>
+<p>Эти ответы используются в срезах по джунам, мидлам, сеньорам, лидам и архитекторам.</p>
+</article>
+</div>
+<div class="overview__grid"><article class="note-card note-card--soft methodology-note"><span class="note-card__label">Контекст</span><p>Данные лучше читать как карту настроений и практик активного сообщества: где меняется стек, какие инструменты растут и какие темы становятся важнее для разработчиков.</p></article></div>
+</div>
+</div>
+</section>
+
+<section class="partners-note" aria-labelledby="partners-note-title">
+<div class="container">
+<div class="partners-note__panel">
+<div class="partners-note__intro">
+<span class="section-head__eyebrow">О проекте</span>
+<h2 id="partners-note-title">Спасибо партнёрам</h2>
+<p>
+          Благодарим компании, которые поддержали сбор данных и развитие
+          русскоязычного PHP-сообщества.
+        </p>
+</div>
+<div class="partners-note__list" aria-label="Партнёры отчёта">
+<a class="partner-card" href="https://devcrowd.ru/" target="_blank" rel="noopener">
+<img src="/images/php-survey-2026/devcrowd-logo.png" alt="DevCrowd" class="partner-card__logo"/>
+<p>Недушные рисерчи<br/>русскоязычного IT.</p>
+<span>devcrowd.ru ↗</span>
+</a>
+<a class="partner-card" href="https://t.me/live_php_news" target="_blank" rel="noopener">
+<img src="/images/php-survey-2026/livephp-logo.jpg" alt="LivePHP" class="partner-card__logo"/>
+<p>Петербургское сообщество PHP-разработчиков.</p>
+<span>t.me/live_php_news ↗</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="raw-data-title" class="report-section report-section--raw" id="raw-data">
+<div class="container">
+<div class="section-head">
+<div>
+<span class="section-head__eyebrow">Дополнительные срезы</span>
+<h2 id="raw-data-title">Что видно при сравнении групп</h2>
+<p>Здесь собраны срезы, которые помогают увидеть различия между возрастами, странами, грейдами, инструментами и инженерными практиками.</p>
+</div>
+</div>
+<div class="raw-summary-grid">
+<article class="raw-summary-card">
+<span>География</span>
+<strong>77%</strong>
+<p>Россия занимает основную долю выборки — 77%. Также встречаются Германия, Польша, Казахстан, Грузия и Сербия. Эти страны дают дополнительный контекст, но по объёму данных пока не требуют отдельных выводов по каждой стране.</p>
+</article>
+<article class="raw-summary-card">
+<span>Возрастное ядро</span>
+<strong>73%</strong>
+<p>73% участников — в возрасте от 30 до 49 лет. В ответах заметен опыт людей, которые уже давно работают в профессии и смотрят на индустрию не с позиции старта, а изнутри практики.</p>
+</article>
+</div>
+<div class="insight-grid insight-grid--dense">
+<article class="insight-card insight-card--data">
+<div class="card-meta">
+<span>Портрет</span>
+</div>
+<span class="card-badge">Распределение</span>
+<h3>Возраст сильнее влияет на тон отчёта, чем кажется</h3>
+<div class="metric-bars">
+<div class="metric-bar"><span>18–24 лет</span><strong>7%</strong><i style="--value: 7%"></i></div>
+<div class="metric-bar"><span>25–29 лет</span><strong>16%</strong><i style="--value: 16%"></i></div>
+<div class="metric-bar"><span>30–39 лет</span><strong>51%</strong><i style="--value: 51%"></i></div>
+<div class="metric-bar"><span>40–49 лет</span><strong>22%</strong><i style="--value: 22%"></i></div>
+</div>
+<p>Отчёт описывает не вход в профессию, а зрелую часть PHP-рынка. Поэтому темы архитектуры, качества, AI и инфраструктуры закономерно звучат громче, чем базовое обучение.</p>
+</article>
+<article class="insight-card insight-card--data">
+<div class="card-meta">
+<span>PHP</span>
+<span>множественный выбор</span>
+</div>
+<span class="card-badge">Версии</span>
+<h3>Современный PHP лидирует, но legacy всё ещё рядом</h3>
+<div class="metric-bars">
+<div class="metric-bar"><span>PHP 8.4</span><strong>54%</strong><i style="--value: 54%"></i></div>
+<div class="metric-bar"><span>PHP 8.3</span><strong>49%</strong><i style="--value: 49%"></i></div>
+<div class="metric-bar"><span>PHP 8.2</span><strong>38%</strong><i style="--value: 38%"></i></div>
+<div class="metric-bar"><span>PHP 7.x</span><strong>28%</strong><i style="--value: 28%"></i></div>
+<div class="metric-bar"><span>PHP 5.x</span><strong>4%</strong><i style="--value: 4%"></i></div>
+</div>
+<p>Картина не бинарная: у команд часто одновременно живут новые версии и старые контуры. Для PHP это не сенсация, это семейная традиция, которую все ругают и продолжают обслуживать.</p>
+</article>
+<article class="insight-card insight-card--data">
+<div class="card-meta">
+<span>Фреймворки</span>
+</div>
+<span class="card-badge">Смешанный стек</span>
+<h3>Laravel и Symfony не столько враги, сколько соседи по проектам</h3>
+<div class="metric-bars">
+<div class="metric-bar"><span>Laravel</span><strong>49%</strong><i style="--value: 49%"></i></div>
+<div class="metric-bar"><span>Symfony</span><strong>38%</strong><i style="--value: 38%"></i></div>
+<div class="metric-bar"><span>Yii 2</span><strong>19%</strong><i style="--value: 19%"></i></div>
+<div class="metric-bar"><span>Bitrix</span><strong>14%</strong><i style="--value: 14%"></i></div>
+</div>
+<p>88 респондентов одновременно отметили Laravel и Symfony. Среди пользователей Bitrix 65 также отметили Laravel, 35 — Symfony.</p>
+</article>
+<article class="insight-card insight-card--warning">
+<div class="card-meta">
+<span>Архитектура</span>
+</div>
+<span class="card-badge card-badge--warning">Осторожно</span>
+<h3>Архитектурные варианты пересекаются</h3>
+<p>Монолит отметили 56%, модульный монолит — 58%, микросервисы — 37%. Это множественный выбор, поэтому сумма не обязана давать 100%.</p>
+<ul class="detail-list">
+<li>181 респондент отметил и монолит, и модульный монолит.</li>
+<li>165 респондентов отметили модульный монолит и микросервисы.</li>
+<li>73 респондента выбрали все три варианта.</li>
+</ul>
+<p>Этот блок лучше читать как карту опыта команд, а не как строгую классификацию одного проекта.</p>
+</article>
+<article class="insight-card insight-card--data">
+<div class="card-meta">
+<span>Инженерные практики</span>
+</div>
+<span class="card-badge">Контроль качества</span>
+<h3>Качество держится на PHPUnit, PHP CS Fixer и PHPStan</h3>
+<div class="metric-bars">
+<div class="metric-bar"><span>PHPUnit</span><strong>84%</strong><i style="--value: 84%"></i></div>
+<div class="metric-bar"><span>PHP CS Fixer</span><strong>61%</strong><i style="--value: 61%"></i></div>
+<div class="metric-bar"><span>PHPStan</span><strong>59%</strong><i style="--value: 59%"></i></div>
+<div class="metric-bar"><span>Rector</span><strong>29%</strong><i style="--value: 29%"></i></div>
+<div class="metric-bar"><span>Psalm</span><strong>28%</strong><i style="--value: 28%"></i></div>
+</div>
+<p>Статический анализ уже почти догнал форматирование кода. Это хороший признак взросления практик, хотя 28% все еще тестируют качество на клиентах.</p>
+</article>
+<article class="insight-card insight-card--data">
+<div class="card-meta">
+<span>AI</span>
+</div>
+<span class="card-badge">Поведение</span>
+<h3>AI стал рабочим инструментом, но не у всех дошёл до агентного режима</h3>
+<div class="metric-bars">
+<div class="metric-bar"><span>Часто при разработке</span><strong>57%</strong><i style="--value: 57%"></i></div>
+<div class="metric-bar"><span>Вместо поисковика</span><strong>54%</strong><i style="--value: 54%"></i></div>
+<div class="metric-bar"><span>В повседневной жизни</span><strong>51%</strong><i style="--value: 51%"></i></div>
+<div class="metric-bar"><span>В проекте / компании</span><strong>19%</strong><i style="--value: 19%"></i></div>
+</div>
+<p>AI уже массовый, но чаще как персональный усилитель. Корпоративная интеграция пока сильно отстаёт от личного использования.</p>
+</article>
+<article class="insight-card insight-card--data">
+<div class="card-meta">
+<span>AI-агенты</span>
+</div>
+<span class="card-badge">Инструменты</span>
+<h3>Почти половина ещё не перешла к агентам</h3>
+<div class="metric-bars">
+<div class="metric-bar"><span>Не использовали агентов</span><strong>42%</strong><i style="--value: 42%"></i></div>
+<div class="metric-bar"><span>Cursor</span><strong>21%</strong><i style="--value: 21%"></i></div>
+<div class="metric-bar"><span>Claude Code</span><strong>16%</strong><i style="--value: 16%"></i></div>
+<div class="metric-bar"><span>JetBrains AI / Junie</span><strong>12%</strong><i style="--value: 12%"></i></div>
+<div class="metric-bar"><span>GitHub Copilot</span><strong>9%</strong><i style="--value: 9%"></i></div>
+</div>
+<p>Формула простая: чаты уже стали обычной практикой, агенты — ещё нет. Поэтому 58% использующих агентов выглядит сильным, но рынок пока в переходной фазе.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="portrait-title" class="report-section" id="portrait">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="portrait-title">Кто отвечал</h2>
+<p>
+              Возраст, география, пол и интересы участников. Эти данные помогают понять, чей опыт сильнее всего представлен в отчёте.
+            </p>
+</div>
+</div><nav aria-label="Срезы раздела portrait" class="local-nav"><a href="#portrait-gender">Пол</a><a href="#portrait-age">Возраст</a><a href="#portrait-geo">География</a><a href="#portrait-hobby">Хобби</a></nav>
+<div class="insight-grid">
+<article class="insight-card insight-card--caution" id="portrait-gender">
+<span class="card-badge card-badge--caution">Контекст</span>
+<div class="card-meta">
+<span>Портрет</span>
+</div>
+<h3>Пол</h3>
+<div class="stat-inline">96% мужчин · 4% женщин · 1% «не скажу»</div>
+<p>
+              В 2024 году было 97% мужчин и 3% женщин. Доля женщин выросла с 3% до 4% — небольшой, но устойчивый
+              тренд второй год подряд.
+            </p>
+<p>
+              В общей массе отдельных выводов по гендерам делать нельзя из-за небольшой выборки.
+            </p>
+</article>
+<article class="insight-card" id="portrait-age">
+<div class="card-meta">
+<span>Портрет</span>
+</div>
+<h3>Возраст</h3>
+<div class="stat-inline stat-inline--neutral">Главная группа: 30–39 лет</div>
+<p>
+              Тренд на старение аудитории опроса продолжается. Основная группа всё так же 30–39 лет, но есть увеличение аудитории
+              в возрастных категориях старше.
+            </p>
+<p>
+              Распределение по гендерам не показывает аномалий, и в большинстве возрастных групп доля женщин составляет 3–4%.
+            </p>
+</article>
+<article class="insight-card" id="portrait-geo">
+<div class="card-meta">
+<span>Портрет</span>
+</div>
+<h3>Представленность стран</h3>
+<div class="stat-inline">Россия +7%</div>
+<p>
+              Доля респондентов из России значительно выросла в сравнении с 2024 годом. Представленность других стран, кроме Беларуси,
+              минимальна. В отчёте далее используются сравнения ответов респондентов из РФ и других стран.
+            </p>
+</article>
+<article class="insight-card" id="portrait-hobby">
+<div class="card-meta">
+<span>Портрет</span>
+</div>
+<h3>Хобби</h3>
+<div class="stat-inline">35% ответов ушли в «Другое»</div>
+<p>
+              Более 35% ответов попали в «Другое». Данные по закрытым вариантам приведены отдельно,
+              открытые ответы разобраны ниже по категориям.
+            </p>
+<ul class="detail-list">
+<li>Спорт и активный отдых — 72 упоминания: бег, велосипед, мотоциклы, сноуборд, зал, йога, марафоны, хайкинг и многое другое.</li>
+<li>Геймдев и игры — 38 упоминаний: GameDev, компьютерные и настольные игры, VR, Warhammer, Factorio.</li>
+<li>Музыка — 27 упоминаний: гитара, барабаны, вокал, румбоксы.</li>
+<li>3D и электроника — 22 упоминания: 3D-печать, Arduino, IoT, ретрокомпы, радиоэлектроника.</li>
+<li>Чтение и образование — 20 упоминаний: книги, научпоп, математика, самообразование, фантастика.</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="php-title" class="report-section report-section--alt" id="php">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="php-title">На чём пишут PHP-разработчики</h2>
+<p>
+              Версии PHP, фреймворки, дополнительные языки и различия между рабочими и личными проектами.
+            </p>
+</div>
+</div><nav aria-label="Срезы раздела php" class="local-nav"><a href="#php-versions">Версии</a><a href="#php-grades">Грейды</a><a href="#php-langs">Языки</a><a href="#php-frameworks">Фреймворки</a><a href="#php-pet">Pet-проекты</a></nav>
+<div class="insight-grid">
+<article class="insight-card" id="php-versions">
+<div class="card-meta">
+<span>PHP</span>
+</div>
+<h3>Версия PHP</h3>
+<div class="stat-inline">8.4 выросла почти на 40%</div>
+<p>
+              Внедрение PHP 8.4 выросло почти на 40%. При этом около 13% уже используют версию 8.5,
+              вышедшие в конце 2025 года.
+            </p>
+</article>
+<article class="insight-card" id="php-grades">
+<div class="card-meta">
+<span>PHP</span>
+</div>
+<h3>Версия языка и грейд</h3>
+<div class="stat-inline stat-inline--neutral">8.4 у senior+ встречается в 56–70% случаев</div>
+<p>
+              Чем опытнее разработчик, тем новее стек: техлиды и сеньоры чаще работают на 8.4,
+              тогда как 7.x концентрируется у мидлов.
+            </p>
+<p>
+              Результаты по джунам не стоит интерпретировать: выборка небольшая.
+            </p>
+</article>
+<article class="insight-card" id="php-langs">
+<div class="card-meta">
+<span>PHP</span>
+<span>Допязыки</span>
+</div>
+<h3>Дополнительные языки</h3>
+<div class="stat-inline">Каждый третий также пишет на Go</div>
+<p>
+              Формулировка вопроса позволяла писать не только про последний год, но и вообще про весь опыт в разработке.
+              Среди вариантов отсутствовал HTML, а 111 человек в этом вопросе отметили ещё и PHP.
+            </p>
+<blockquote>
+              Каждый третий PHP-разработчик также пишет на Golang. Этот показатель не вырос в сравнении с 2024 годом.
+            </blockquote>
+</article>
+<article class="insight-card" id="php-frameworks">
+<div class="card-meta">
+<span>PHP</span>
+</div>
+<h3>Фреймворки на работе</h3>
+<div class="stat-inline">Laravel — 51% · Symfony — 40%</div>
+<div aria-label="Сравнение фреймворков" class="metric-bars">
+<div class="metric-bar"><span>Laravel</span><strong>51%</strong><i style="--value: 51%"></i></div>
+<div class="metric-bar"><span>Symfony</span><strong>40%</strong><i style="--value: 40%"></i></div>
+<div class="metric-bar"><span>Yii 2</span><strong>20%</strong><i style="--value: 20%"></i></div>
+</div>
+<p>
+              Laravel по-прежнему лидирует, но его доля снизилась с 55% в 2024 году. Symfony, напротив, вырос с 36% до 40% —
+              разрыв сокращается, а не растёт. Yii 2 — 20%, но уже есть те, кто успел начать использовать Yii 3.
+            </p>
+</article>
+<article class="insight-card" id="php-pet">
+<div class="card-meta">
+<span>PHP</span>
+<span>Фреймворк × грейд</span>
+</div>
+<h3>Фреймворк и опыт</h3>
+<ul class="bullet-list">
+<li>Laravel доминирует у джунов: 67%.</li>
+<li>Symfony растёт с опытом: джуны 13%, сеньоры 50%.</li>
+<li>Bitrix у джунов 27%, что втрое выше, чем у сеньоров.</li>
+</ul>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>PHP</span>
+<span>Фреймворки для pet-проектов</span>
+</div>
+<h3>Что интересно вне работы</h3>
+<div class="stat-inline">Yii 3 в pet-проектах в 4 раза популярнее</div>
+<p>
+              Yii 3 в личных проектах в 4 раза популярнее, чем на работе.
+              Spiral: 4% в pet-проектах против 2% в рабочем стеке.
+            </p>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>PHP</span>
+<span>Фреймворки</span>
+</div>
+<h3>Bitrix и смешанный стек</h3>
+<p>
+              56% пользователей Bitrix параллельно работают на Laravel, 30% — на Symfony.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="infra-title" class="report-section" id="infra">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="infra-title">Как устроена инженерная практика</h2>
+<p>
+              Архитектура, асинхронность, тестирование, контроль качества, observability и инструменты разработки.
+            </p>
+</div>
+</div><nav aria-label="Срезы раздела infra" class="local-nav"><a href="#infra-arch">Архитектура</a><a href="#infra-async">Асинхронность</a><a href="#infra-tests">Тесты</a><a href="#infra-observability">Observability</a><a href="#infra-ide">IDE</a></nav>
+<div class="insight-grid">
+<article class="insight-card" id="infra-arch">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Архитектура и грейд</h3>
+<ul class="bullet-list">
+<li>Модульный монолит — история про опытных: Senior+ 62–75%.</li>
+<li>Простой монолит концентрируется у джунов и мидлов: 66–69%.</li>
+<li>Микросервисы почти отсутствуют у джунов: 14%.</li>
+</ul>
+</article>
+<article class="insight-card" id="infra-async">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Асинхронный код</h3>
+<div class="stat-inline">Очереди и ивенты — главный сценарий</div>
+<p>
+              Прямое сравнение с 2024 затруднено: в этом году появился новый вариант с ивентами и очередями, который перераспределил часть ответов.
+              Очереди как «асинхронность» — самая популярная форма.
+            </p>
+<p>
+              Настоящая асинхронность через Amp, ReactPHP и Fibers — суммарно около 9%. 24% хотят погрузиться в тему глубже.
+            </p>
+</article>
+<article class="insight-card" id="infra-tests">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>CMS</h3>
+<div class="stat-inline stat-inline--neutral">Не работают с CMS: +8%</div>
+<p>
+              Число тех, кто не работает с CMS, выросло на 8% в сравнении с 2024 годом. Показатели всех CMS, кроме Битрикса, упали.
+            </p>
+</article>
+<article class="insight-card" id="infra-observability">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Тестирование</h3>
+<div class="stat-inline">PHPUnit — 85% · Codeception — 23% · Pest — 12%</div>
+<div aria-label="Инструменты тестирования" class="metric-bars">
+<div class="metric-bar"><span>PHPUnit</span><strong>85%</strong><i style="--value: 85%"></i></div>
+<div class="metric-bar"><span>Codeception</span><strong>23%</strong><i style="--value: 23%"></i></div>
+<div class="metric-bar"><span>Pest</span><strong>12%</strong><i style="--value: 12%"></i></div>
+</div>
+<p>
+              PHPUnit остаётся стандартом де-факто. Codeception держит второе место. Pest — 12%.
+            </p>
+<blockquote>
+              Вариант «не использую» в этом году подан в юмористической форме, поэтому точное сравнение с 2024 условное.
+            </blockquote>
+</article>
+<article class="insight-card" id="infra-ide">
+<div class="card-meta">
+<span>Инфраструктура</span>
+<span>Грейд × тесты</span>
+</div>
+<h3>Кто не тестирует</h3>
+<p>
+              Неготовность тестировать свойственна джунам и мидлам: около 10% в этих группах не тестируют.
+            </p>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Раннеры</h3>
+<p>
+              FrankenPHP активно растёт и обогнал Swoole в сравнении с 2024 годом.
+            </p>
+<ul class="detail-list">
+<li>Nginx/Angie + PHP-FPM — 90%.</li>
+<li>Apache — 15%.</li>
+<li>RoadRunner — 14%.</li>
+<li>FrankenPHP — 7%.</li>
+<li>Nginx Unit — 5%.</li>
+<li>Swoole — 4%.</li>
+</ul>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Контроль качества</h3>
+<div class="stat-inline">PHPStan: 47% → 60%</div>
+<div aria-label="Динамика PHPStan" class="delta-card">
+<span>2024: 47%</span>
+<strong>+13 п.п.</strong>
+<span>2026: 60%</span>
+</div>
+<p>
+              Главный рост у PHPStan — +13%, с 47% до 60%. Rector тоже заметно вырос: +9%.
+              PHP_CodeSniffer незначительно сдал позиции — его вытесняет CS Fixer.
+            </p>
+<p>
+              Доля тех, кто обходится без инструментов контроля качества, выросла с 23% до 28%.
+            </p>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Профилирование</h3>
+<div class="stat-inline">Xdebug Profiler — 50%</div>
+<p>
+              Половина разработчиков использует Xdebug Profiler, почти треть обходится ручными таймерами.
+              29% не профилируют вообще.
+            </p>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Observability</h3>
+<ul class="bullet-list">
+<li>70% ограничиваются логами — это базовый, но всё ещё очень поверхностный уровень.</li>
+<li>42% используют метрики в реальном времени.</li>
+<li>Трейсинг (OTLP) использует 16% респондентов.</li>
+<li>Каждый пятый не занимается observability вообще.</li>
+</ul>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>Платные инструменты и сервисы</h3>
+<ul class="chip-list">
+<li>PhpStorm / JetBrains — 71%</li>
+<li>Cursor — 12%</li>
+<li>Claude / Claude Code — 8%</li>
+<li>ChatGPT / OpenAI Codex — 7%</li>
+<li>Sentry — 7%</li>
+<li>Laravel IDEA — 6%</li>
+</ul>
+<ul class="detail-list">
+<li>IDE: PhpStorm, Cursor, GoLand.</li>
+<li>AI-инструменты: Claude Code, ChatGPT / OpenAI Codex, Copilot, Windsurf, Junie.</li>
+<li>Observability: Sentry, Grafana, Kibana / ELK, DataDog, Prometheus, New Relic.</li>
+<li>Облака: AWS, Yandex Cloud, Digital Ocean.</li>
+<li>Прочее: TablePlus, DataGrip, Jira / YouTrack / Kaiten, Tinkerwell.</li>
+</ul>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Инфраструктура</span>
+</div>
+<h3>IDE</h3>
+<div class="stat-inline">PhpStorm — 89% · VS Code — 21%</div>
+<p>
+              PhpStorm остаётся абсолютным стандартом сообщества и год к году почти не меняется. VS Code идёт вторым, чаще как вспомогательный
+              инструмент для тех, кто закрывает ещё и фронтенд-задачи.
+            </p>
+<p>
+              Отдельная категория «AI Based» составляет 4%. Cursor также упоминается в открытых ответах 17 раз.
+            </p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="ai-title" class="report-section report-section--alt" id="ai">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="ai-title">AI уже в рабочем процессе</h2>
+<p>
+              Как PHP-разработчики используют нейросети, агентов и AI-инструменты в личной и корпоративной работе.
+            </p>
+</div>
+</div><nav aria-label="Срезы раздела ai" class="local-nav"><a href="#ai-nets">Нейросети</a><a href="#ai-agents">Агенты</a><a href="#ai-countries">Страны</a><a href="#ai-grades">Грейды</a><a href="#ai-maturity">Зрелость</a></nav>
+<div class="insight-grid">
+<article class="insight-card" id="ai-nets">
+<div class="card-meta">
+<span>AI</span>
+</div>
+<h3>Использование нейросетей</h3>
+<div class="stat-inline">Рост почти по всем сценариям</div>
+<p>
+              Рост показателей применения нейросетей идёт почти по всем вариантам. При этом два ответа снижают точность:
+              «Не слышал про нейросети» использовался вместо «не использую», а «Это мой друг/подруга» был юмористическим вариантом.
+            </p>
+</article>
+<article class="insight-card" id="ai-agents">
+<div class="card-meta">
+<span>AI</span>
+</div>
+<h3>Использование агентов</h3>
+<div class="stat-inline">58% уже используют хотя бы один агент</div>
+<div aria-label="Использование AI-агентов" class="metric-bars">
+<div class="metric-bar"><span>Используют агентов</span><strong>58%</strong><i style="--value: 58%"></i></div>
+<div class="metric-bar"><span>Не используют</span><strong>42%</strong><i style="--value: 42%"></i></div>
+</div>
+<p>
+              Cursor лидирует, Claude Code второй, JetBrains AI / Junie — третье место, что логично при 88% PhpStorm-аудитории.
+              GigaCode и SourceCraft суммарно дают около 5%.
+            </p>
+</article>
+<article class="insight-card" id="ai-countries">
+<div class="card-meta">
+<span>AI</span>
+<span>Страна × агенты</span>
+</div>
+<h3>Россия против остальных стран</h3>
+<ul class="bullet-list">
+<li>45% респондентов из России не используют агентов вообще.</li>
+<li>Среди участников из остальных стран таких 32%.</li>
+<li>Claude Code и GitHub Copilot за пределами России используют примерно вдвое чаще.</li>
+<li>Cursor почти выравнивает картину: 21% в России против 22% в остальных странах.</li>
+</ul>
+</article>
+<article class="insight-card" id="ai-grades">
+<div class="card-meta">
+<span>AI</span>
+</div>
+<h3>Агенты и грейд</h3>
+<p>
+              Cursor используется равномерно на всех уровнях. JetBrains AI растёт с опытом:
+              от 3% у джунов до 21% у архитекторов. Claude Code тоже смещён к старшим грейдам.
+            </p>
+</article>
+<article class="insight-card insight-card--warning">
+<span class="card-badge card-badge--warning">Контекст</span>
+<div class="card-meta">
+<span>AI</span>
+</div>
+<h3>Где используют нейросети</h3>
+<div class="stat-inline">Юмористический вариант искажает картину</div>
+<p>
+              В вопросе был вариант «Голос в голове» — его выбрали 19% респондентов.
+              Отдельно показан срез без юмористического ответа: ответов 776.
+            </p>
+<ul class="detail-list">
+<li>В интернетах — 90%.</li>
+<li>Во внутреннем контуре компании — 9%.</li>
+<li>Яндекс/Сбер/Ростелеком колонка — 8%.</li>
+<li>Свой ИИ-сервер на GPU — 6%.</li>
+<li>Свой ИИ-сервер на CPU — 2%.</li>
+</ul>
+</article>
+<article class="insight-card" id="ai-maturity">
+<div class="card-meta">
+<span>AI</span>
+</div>
+<h3>Уровень AI-зрелости</h3>
+<ul class="bullet-list">
+<li>35% держат чат отдельно от работы.</li>
+<li>27% уже используют агента прямо в IDE.</li>
+<li>Только 8% полностью отвергают AI.</li>
+<li>1% уже живёт на уровне мультиагентных SDLC-систем.</li>
+</ul>
+<p>Аудитория равномерно распределена по трём уровням зрелости AI-интеграции.</p>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="community-title" class="report-section" id="community">
+<div class="container">
+<div class="section-head">
+<div>
+<h2 id="community-title">Где живёт PHP-сообщество</h2>
+<p>
+              Телеграм-каналы, видеоконтент, источники знаний, запросы на обучение и темы, которых сообществу не хватает.
+            </p>
+</div>
+</div><nav aria-label="Срезы раздела community" class="local-nav"><a href="#community-channels">Каналы</a><a href="#community-video">Видео</a><a href="#community-learning">Обучение</a><a href="#community-juniors">Новички</a><a href="#community-people">Люди</a></nav>
+<div class="insight-grid">
+<article class="insight-card" id="community-channels">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Телеграм-каналы</h3>
+<p>
+              Канал «Пых» за год опередил PHP Digest почти на 20 процентных пунктов. PHP Fart Time теперь делит третье место
+              с «Пятиминуткой PHP».
+            </p>
+<ul class="detail-list">
+<li>Пых — 64%.</li>
+<li>PHP Digest — 39%.</li>
+<li>PHP Fart Time — 30%.</li>
+<li>Пятиминутка PHP — 30%.</li>
+<li>Библиотека пхпшника — 21%.</li>
+<li>Не читают телеграм-каналы — 18%.</li>
+</ul>
+</article>
+<article class="insight-card" id="community-video">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Видеоконтент</h3>
+<p>
+              40% респондентов выбрали хотя бы один регулярный видеоканал. 36% отметили нерегулярный просмотр, 30% — что не смотрят видео.
+            </p>
+<ul class="detail-list">
+<li>CutCode — 61% среди регулярных зрителей.</li>
+<li>PHP Point — 45%.</li>
+<li>PHP Fart Time — 37%.</li>
+<li>Deworker Pro — 18%.</li>
+<li>PHP Channel — 8%.</li>
+<li>agoalofalife — 7%.</li>
+</ul>
+</article>
+<article class="insight-card" id="community-learning">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Что хотят изучать глубже</h3>
+<ul class="bullet-list">
+<li>Асинхронность и параллелизм — около 90 упоминаний, абсолютный лидер.</li>
+<li>Внутреннее устройство PHP — около 25 упоминаний.</li>
+<li>Архитектура и паттерны — около 20 упоминаний.</li>
+<li>Тестирование и long running — примерно по 15 упоминаний.</li>
+<li>Около 10 ответов — «хочу уйти с PHP».</li>
+</ul>
+</article>
+<article class="insight-card" id="community-juniors">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Источники знаний</h3>
+<div class="stat-inline">AI как способ учиться вырос сильнее всех</div>
+<p>
+              ИИ как инструмент обучения вырос с 15 до примерно 35 упоминаний — это сильнейшая динамика среди всех категорий.
+              Курсы и конференции просели заметнее всего.
+            </p>
+<ul class="detail-list">
+<li>YouTube-каналы — около 55 упоминаний.</li>
+<li>Книги — около 50.</li>
+<li>Telegram-каналы — около 40.</li>
+<li>ИИ / нейросети — около 35.</li>
+<li>Habr — около 30.</li>
+<li>Документация — около 25.</li>
+<li>Курсы — около 20.</li>
+<li>Конференции и подкасты — около 10.</li>
+</ul>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Ресурсы для новичков</h3>
+<p>
+              Структура рекомендаций стабильна: книги и YouTube по-прежнему лидируют. Но в 2025-м появились две новые категории —
+              AI как отдельная рекомендуемая категория и «Практика» как самостоятельный тип ответа.
+            </p>
+</article>
+<article class="insight-card">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Чего не хватает сообществу</h3>
+<ul class="bullet-list">
+<li>Офлайн-митапов и конференций — около 30 упоминаний, это самый частый запрос.</li>
+<li>Линчей, код-ревью и разборов реальных ошибок — около 15.</li>
+<li>Стримов и лайвкодинга с продовыми кейсами — около 12.</li>
+<li>Контента для middle/senior и карьерных треков без ухода в менеджмент — около 10.</li>
+<li>Хардкорного технического контента, regional events и точечных тем вроде Temporal или Yii3.</li>
+</ul>
+</article>
+</div>
+<div class="section-stack">
+<article class="table-card">
+<div class="card-meta">
+<span>Сообщество</span>
+<span>Книги и платформы для новичков</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>Источник</th>
+<th>2025</th>
+<th>2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>«Чистый код» — Роберт Мартин</td>
+<td>13</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Зандстра — PHP. Объекты, шаблоны</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>«Денди-код» — Черняев</td>
+<td>4</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Хориков — Принципы юнит-тестирования</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Hexlet</td>
+<td>6</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Laracasts</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Otus</td>
+<td>2</td>
+<td>12</td>
+</tr>
+<tr>
+<td>deworker.pro</td>
+<td>2</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+<article class="table-card">
+<div class="card-meta">
+<span>Сообщество</span>
+<span>YouTube и документация</span>
+</div>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>Ресурс</th>
+<th>2025</th>
+<th>2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@CutCodeRu</td>
+<td>3</td>
+<td>20</td>
+</tr>
+<tr>
+<td>@ProgramWithGio</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr>
+<td>@LaravelCreative</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>@php-farttime</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>php.net</td>
+<td>13</td>
+<td>—</td>
+</tr>
+<tr>
+<td>refactoring.guru</td>
+<td>3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Laravel docs</td>
+<td>2</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+<article class="table-card" id="community-people">
+<div class="card-meta">
+<span>Сообщество</span>
+</div>
+<h3>Заметные люди в PHP-сообществе</h3>
+<div class="table-wrap">
+<table class="data-table">
+<thead>
+<tr>
+<th>Персона</th>
+<th>Упоминаний</th>
+<th>Доля</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Валентин Удальцов</td>
+<td>132</td>
+<td>73%</td>
+</tr>
+<tr>
+<td>Александр Макаров</td>
+<td>45</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Кирилл Несмеянов</td>
+<td>21</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>Данил Щуцкий</td>
+<td>17</td>
+<td>9%</td>
+</tr>
+<tr>
+<td>Алексей Гагарин</td>
+<td>14</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>Дмитрий Елисеев</td>
+<td>12</td>
+<td>7%</td>
+</tr>
+<tr>
+<td>Сергей Предводителев</td>
+<td>11</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>Команда FartTime</td>
+<td>10</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>Адель Файзрахманов</td>
+<td>8</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>Павел Бучнев</td>
+<td>8</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>Дмитрий Дантес</td>
+<td>7</td>
+<td>4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<p>
+<strong>Ежегодный опрос PHP-разработчиков — 2026.</strong> 818 ответов, 30 стран, период опроса:
+        28 декабря 2025 — 31 января 2026.
+      </p>
+</div>
+</footer>
+</body>
+</html>
