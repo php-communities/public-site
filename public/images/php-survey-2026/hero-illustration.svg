@@ -1,0 +1,35 @@
+<svg width="640" height="470" viewBox="0 0 640 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="470" fill="none"/>
+  <path d="M110 392C72 363 60 302 70 243C82 171 130 124 203 111C246 104 279 81 327 84C405 88 484 131 521 200C558 269 554 359 486 401C429 436 358 415 298 417C232 420 162 432 110 392Z" fill="#AEEAF6"/>
+  <path d="M114 385C85 357 73 311 78 263C86 193 124 148 189 130C243 115 301 130 357 124C419 118 489 123 531 177C575 235 586 324 530 382C486 427 414 422 355 419C280 416 168 436 114 385Z" fill="#CFF4FB"/>
+  <rect x="179" y="116" width="281" height="194" rx="26" fill="white" stroke="#D3E9F0" stroke-width="4"/>
+  <rect x="179" y="116" width="281" height="42" rx="26" fill="#ECFAFD"/>
+  <circle cx="210" cy="137" r="8" fill="#7BDFF2"/>
+  <circle cx="236" cy="137" r="8" fill="#A09CB0"/>
+  <circle cx="262" cy="137" r="8" fill="#D7E3EC"/>
+  <rect x="206" y="184" width="78" height="88" rx="18" fill="#ECFAFD"/>
+  <rect x="298" y="184" width="62" height="88" rx="18" fill="#F5F9FC"/>
+  <rect x="374" y="184" width="59" height="88" rx="18" fill="#ECFAFD"/>
+  <rect x="223" y="212" width="44" height="60" rx="12" fill="#7BDFF2"/>
+  <rect x="315" y="224" width="28" height="48" rx="10" fill="#1282A2" opacity="0.82"/>
+  <rect x="391" y="198" width="28" height="74" rx="10" fill="#1282A2"/>
+  <rect x="207" y="288" width="225" height="8" rx="4" fill="#E7F3F7"/>
+  <rect x="207" y="304" width="148" height="8" rx="4" fill="#E7F3F7"/>
+  <rect x="92" y="134" width="128" height="88" rx="24" transform="rotate(-8 92 134)" fill="white" stroke="#D3E9F0" stroke-width="4"/>
+  <text x="120" y="169" fill="#7F8EA3" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Ответы</text>
+  <text x="118" y="205" fill="#2D3142" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900">818</text>
+  <rect x="403" y="92" width="158" height="104" rx="24" transform="rotate(6 403 92)" fill="white" stroke="#D3E9F0" stroke-width="4"/>
+  <text x="437" y="131" fill="#7F8EA3" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">Страны</text>
+  <text x="435" y="172" fill="#1282A2" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900">30</text>
+  <rect x="58" y="290" width="182" height="112" rx="26" fill="white" stroke="#D3E9F0" stroke-width="4"/>
+  <text x="86" y="327" fill="#7F8EA3" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">
+    <tspan x="86" dy="0">Используют</tspan>
+    <tspan x="86" dy="18">агентов</tspan>
+  </text>
+  <text x="86" y="381" fill="#2D3142" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">58%</text>
+  <rect x="423" y="285" width="156" height="112" rx="26" fill="white" stroke="#D3E9F0" stroke-width="4"/>
+  <text x="452" y="325" fill="#7F8EA3" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">PhpStorm</text>
+  <text x="451" y="368" fill="#1282A2" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">89%</text>
+  <path d="M494 221C494 196.147 514.147 176 539 176C563.853 176 584 196.147 584 221C584 245.853 563.853 266 539 266C529.822 266 521.286 263.252 514.17 258.529L490 266L496.182 244.104C494.77 236.947 494 229.55 494 221Z" fill="#7BDFF2"/>
+  <path d="M485 205C485 186.222 500.222 171 519 171C537.778 171 553 186.222 553 205C553 223.778 537.778 239 519 239H515.278L500 249L503.644 234.8C492.334 229.064 485 217.319 485 205Z" fill="#1282A2"/>
+</svg>
