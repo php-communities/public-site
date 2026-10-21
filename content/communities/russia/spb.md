@@ -6,6 +6,6 @@ imgSrc: ${basePath}/images/content/communities/spb.jpg
 
 **[@beerphp_spb](https://t.me/beerphp_spb)** — чат городского сообщества.
 
-**[@live_php](https://t.me/live_php)** — митапы и дрикапы.
+**[@live_php](https://t.me/live_php)** — митапы и дринкапы.
 
 **[@symcode](https://t.me/symcode)** — чат сообщества SymCode (бывший symfoniacs_spb).
