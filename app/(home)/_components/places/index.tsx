@@ -26,10 +26,10 @@ export function Places() {
             <div className="container relative top-[-35px] mx-auto space-y-10 bg-white px-8 py-16 md:top-[-65px] md:space-y-5 md:pl-14 lg:top-[-55px] lg:space-y-10 lg:pl-28">
                 <Country name="Беларусь" cities={belarus} />
                 <Country name="Болгария" cities={bulgaria} />
-                <Country name="Россия" cities={russia} />
-                <Country name="Украина" cities={ukraine} />
                 <Country name="Грузия" cities={georgia} />
                 <Country name="Кипр" cities={cyprus} />
+                <Country name="Россия" cities={russia} />
+                <Country name="Украина" cities={ukraine} />
             </div>
         </div>
     );

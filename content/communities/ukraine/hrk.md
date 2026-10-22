@@ -1,6 +1,6 @@
 ---
 name: Харьков
-title: PHP-сообществао в Харькове
+title: PHP-сообщество в Харькове
 imgSrc: ${basePath}/images/content/communities/hrk.jpg
 ---
 

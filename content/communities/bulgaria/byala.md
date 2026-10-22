@@ -1,7 +1,7 @@
 ---
 name: Бяла, Варненская обл.
-title: PHP-сообщество в Бяле у Черного моря.
+title: PHP-сообщество в Бяле у Черного моря
 imgSrc: ${basePath}/images/content/communities/byala.jpg
 ---
 
-**[@byalaru](https://t.me/byalaru)** — Наш канал.
+**[@byalaru](https://t.me/byalaru)** — канал сообщества.

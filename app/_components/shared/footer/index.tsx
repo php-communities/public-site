@@ -7,7 +7,7 @@ export function Footer() {
         <header className="w-full bg-blue-dark">
             <div className="container mx-auto pb-[25px] pt-[75px] lg:pb-[50px] lg:pt-[150px]">
                 <div className="mb:text-[48px] mx-auto mb-[24px] max-w-[600px] text-center text-[30px] font-bold leading-[1.23] text-white">
-                    Если есть желание внести изменение - сделай pull request
+                    Если есть желание внести изменение — сделай pull request
                 </div>
                 <Link
                     className="mx-auto mb-[100px] block w-[64px]"
@@ -17,7 +17,7 @@ export function Footer() {
                     <GithubIcon className="fill-white transition hover:fill-black" />
                 </Link>
                 <div className="text-center font-light text-white">
-                    Сайт поддерживается php сообществом в{' '}
+                    Сайт поддерживается PHP-сообществом в{' '}
                     <Link
                         className="transition hover:opacity-70"
                         href="https://github.com/php-communities/public-site"

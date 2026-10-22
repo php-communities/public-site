@@ -6,7 +6,8 @@ import { inter } from '~/lib/fonts/inter';
 
 export const metadata = {
     title: 'PHP-митапы, чаты и ютуб-каналы',
-    description: 'Каталог полезных ссылок и архив встреч в 15+ городах России, Беларуси, Украины.',
+    description:
+        'Каталог полезных ссылок и архив встреч PHP-сообществ в 30 городах России, Беларуси, Украины, Грузии, Болгарии и Кипра.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
